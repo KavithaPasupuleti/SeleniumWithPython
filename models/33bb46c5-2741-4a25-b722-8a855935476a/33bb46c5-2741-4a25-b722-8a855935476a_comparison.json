@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2021-04-03T08:57:19.848043",
+    "uts": "2021-04-03T08:58:42.843637",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "model_id": "33bb46c5-2741-4a25-b722-8a855935476a",
+    "model_type": "object_detection",
+    "scoring_metric": "",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {}
+    },
+    "model_config_id": "65d69e5e-e9bc-481e-a181-37987fbdfbab",
+    "is_deleted": false,
+    "model_comparisons": {}
+}

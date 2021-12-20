@@ -1,0 +1,18 @@
+{
+    "pipeline_id": "39fa1457-ef40-4053-af27-c1004920713d",
+    "input_schema": {},
+    "output_schema": {},
+    "is_enabled": true,
+    "category": "model_pipeline",
+    "name": "default page group classifier_base_version",
+    "description": "",
+    "cts": "2019-07-18T09:53:34.019461",
+    "is_deleted": false,
+    "uts": "2020-06-05T13:21:06.150574",
+    "default_version": "f7e673d3-0fee-4bea-81e5-94cf787d5e78",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "Pipeline",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "generate_api": false
+}

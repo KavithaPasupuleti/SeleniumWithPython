@@ -1,0 +1,126 @@
+{
+    "model_id": "9c430237-3b3f-4309-9fbb-417bb73e5ace",
+    "data_format": "csv",
+    "retraining_threshold": 500,
+    "exec_grp_id": "0c29aec5-3744-45c0-93d5-eccf0f91b227",
+    "dependency_package": "default_dependency_package_group",
+    "default_version": {
+        "pipeline": {
+            "pipeline_id": "2f05b887-341f-4086-997c-5b608fe832d6",
+            "source": {
+                "model_type": "classification",
+                "pipeline_template_name": "empty"
+            },
+            "source_type": "template",
+            "pipeline_name": "default omr classifier_base_version",
+            "version_id": "8430e1ef-190e-4de8-b39b-28c68b8b7455"
+        },
+        "evaluation": {
+            "180095f7-ea5b-4ab6-b63d-186c990b4608": {
+                "scores": {
+                    "accuracy": 0.9707236842105263,
+                    "precision": 0.9874090472341978,
+                    "recall": 0.9707236842105263,
+                    "f1": 0.9773859227395413
+                },
+                "model_class": "classification",
+                "confusion_metrics": [
+                    [
+                        5839,
+                        160
+                    ],
+                    [
+                        18,
+                        63
+                    ]
+                ],
+                "stats": {
+                    "reconstructed_matrix": [
+                        [
+                            96.03618421052632,
+                            2.6315789473684212,
+                            98.66776315789474
+                        ],
+                        [
+                            0.29605263157894735,
+                            1.0361842105263157,
+                            1.332236842105263
+                        ],
+                        [
+                            96.33223684210526,
+                            3.667763157894737,
+                            100.0
+                        ]
+                    ],
+                    "true_positive": 5839,
+                    "true_negative": 63,
+                    "false_positive": 160,
+                    "false_negative": 18,
+                    "true_percentage": 97.07236842105263,
+                    "false_percentage": 2.9276315789473686
+                },
+                "classes": {
+                    "class_names": [
+                        "0",
+                        "1"
+                    ],
+                    "scores": [
+                        {
+                            "precision": 0.9969267543110808,
+                            "recall": 0.9733288881480247,
+                            "f1-score": 0.9849865047233469,
+                            "support": 5999
+                        },
+                        {
+                            "precision": 0.2825112107623318,
+                            "recall": 0.7777777777777778,
+                            "f1-score": 0.41447368421052627,
+                            "support": 81
+                        }
+                    ]
+                }
+            }
+        },
+        "training_dataset": "d8b52064-fa53-401c-ad12-8be4a58ac08f",
+        "model_type": "classification",
+        "data_format": "csv",
+        "status": "trained",
+        "version_id": "8430e1ef-190e-4de8-b39b-28c68b8b7455",
+        "data_schema": {},
+        "is_deleted": false,
+        "is_enabled": true,
+        "is_default": true,
+        "is_published": true,
+        "parent_version": "8430e1ef-190e-4de8-b39b-28c68b8b7455",
+        "name": "base_version",
+        "model_id": "9c430237-3b3f-4309-9fbb-417bb73e5ace",
+        "created_by": "system",
+        "modified_by": "a7815dbd-0379-4c08-ae65-545c6912c94b",
+        "description": "",
+        "cts": "2020-10-12T10:15:28.516172",
+        "uts": "2020-10-12T10:19:19.464743",
+        "_XpmsObjectMixin__type": "MLModelVersion",
+        "_XpmsObjectMixin__api_version": "9.5",
+        "retraining_threshold": 500,
+        "solution_id": "synthetic5"
+    },
+    "evaluation_datasets": [
+        "180095f7-ea5b-4ab6-b63d-186c990b4608"
+    ],
+    "is_enabled": true,
+    "category": "classification",
+    "name": "default omr classifier",
+    "description": "",
+    "cts": "2020-10-12T10:15:26.274630",
+    "is_deleted": false,
+    "uts": "2020-10-12T10:20:52.151857",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "MLModel",
+    "_XpmsObjectMixin__api_version": "9.5",
+    "template_id": "d1086174-32f4-41b8-8d5d-158bcc7dfe8c",
+    "is_default": true,
+    "metadata": [],
+    "model_type": "classification",
+    "template": ""
+}

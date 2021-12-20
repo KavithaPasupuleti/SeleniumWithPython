@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_postprocess_audit_model",
+    "description": "imported git function",
+    "cts": "2021-09-14T09:05:51.422213",
+    "is_deleted": false,
+    "uts": "2021-09-14T09:05:51.422222",
+    "default_version": "63235f58-3c5e-4149-a7c7-476244b90f5d",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "1368c043-cf7a-40f1-abd7-c2e35bd9f16e"
+}

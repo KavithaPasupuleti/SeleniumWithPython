@@ -1,0 +1,64 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-06-05T12:59:42.136354",
+    "uts": "2020-09-06T07:32:18.910944",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "model_id": "d3e80cdf-de18-4062-a5d3-6d2b44f6e12e",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {
+            "recall": 0,
+            "precision": 0,
+            "f1": 0,
+            "accuracy": 0
+        },
+        "classes": {
+            "0": {
+                "recall": 0,
+                "precision": 0,
+                "f1-score": 0
+            },
+            "1": {
+                "recall": 0,
+                "precision": 0,
+                "f1-score": 0
+            }
+        }
+    },
+    "is_deleted": false,
+    "model_comparisons": {
+        "05a628df-53e6-41a4-bc57-736acdf21082": {
+            "b00e596c-bfe9-4fca-85fd-d808425fc200": {
+                "classes": {
+                    "0": {
+                        "precision": 0.9923150816522575,
+                        "recall": 0.9945442875481386,
+                        "f1-score": 0.9934284340439173,
+                        "support": 3116
+                    },
+                    "1": {
+                        "precision": 0.9842154131847726,
+                        "recall": 0.977859778597786,
+                        "f1-score": 0.9810273021749191,
+                        "support": 1084
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.9902380952380953,
+                    "precision": 0.9902245957906494,
+                    "recall": 0.9902380952380953,
+                    "f1": 0.9902277609615379
+                },
+                "is_recommended": true,
+                "is_cutoff_passed": true
+            }
+        }
+    },
+    "model_config_id": "55ed3223-dcc1-449f-9893-18728a9f9baf",
+    "model_type": "classification",
+    "scoring_metric": "accuracy"
+}

@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_read_csv_ts",
+    "description": "imported git function",
+    "cts": "2021-09-14T08:11:08.958519",
+    "is_deleted": false,
+    "uts": "2021-09-14T08:11:08.958529",
+    "default_version": "21355414-21b8-4ab4-bdee-c6cb71745606",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "1b0b8597-4cf6-45ff-b11b-7a98a1f679a1"
+}

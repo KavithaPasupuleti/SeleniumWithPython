@@ -1,0 +1,38 @@
+{
+    "name": "ingest_template",
+    "description": "service to ingest a template",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:09.452102",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "b2ad0e7c-f38d-4dd9-a5b6-d3ff32e54661",
+    "service_key": "ingest_template_key",
+    "display_name": "Ingest Template",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"data\": {\"type\": \"object\", \"properties\": {\"file_path\": {\"type\": \"string\"}}, \"required\": [\"file_path\"]}, \"metadata\": {\"type\": \"object\", \"properties\": {\"insight_id\": {\"type\": \"string\"}}}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"ingest_document\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"data\"]}",
+    "response_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"metadata\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": [\"string\", \"array\"]}, \"required\": [\"doc_id\"]}}, \"data\": {\"type\": \"object\", \"properties\": {}}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"ingest_document_response\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"metadata\"]}",
+    "request_trigger": "ingest_template",
+    "response_trigger": "ingest_template_response",
+    "headers": {},
+    "service_configuration": "{}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "10"
+    },
+    "category_id": "category_3",
+    "category": "Platform Configuration",
+    "service_name": "ingest_template",
+    "service_type": "INTERNAL"
+}

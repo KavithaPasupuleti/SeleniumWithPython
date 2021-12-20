@@ -1,0 +1,38 @@
+{
+    "name": "classify_document",
+    "description": "service to classify document to domain",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:09.235684",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "9f1d5964-4e3c-42ac-81e0-588feda70530",
+    "service_key": "classification",
+    "display_name": "Classify Document",
+    "feedback_supported": true,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"data\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}}, \"required\": [\"doc_id\"]}, \"trigger\": {\"enum\": [\"classify_document\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"data\"]}",
+    "response_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"metadata\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}, \"classification\": {\"type\": \"object\"}}, \"required\": [\"doc_id\"]}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"classify_document_response\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"metadata\"]}",
+    "request_trigger": "classify_document",
+    "response_trigger": "classify_document_response",
+    "headers": {},
+    "service_configuration": "{\"elements_config\": {\"options\": [\"text\", \"table\", \"heading\", \"page_header\", \"page_footer\", \"field\", \"paragraph\", \"sentence\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"elements_config\", \"description\": \"selection of extracted elements to Train model\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": [\"text\"], \"multi_select\": true, \"hidden\": false, \"config_path\": \"config.data.configuration.elements_config\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"1.0.13\"}, \"classify_on\": {\"options\": [\"page_groups\", \"document\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"classify_on\", \"description\": \"Choose if the classification has to happen on page groups or document\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": [], \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.configuration.classify_on\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"1.0.13\"}, \"custom_model_name\": {\"name\": \"custom_model_name\", \"description\": \"enter the custom_model_name\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"None\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.configuration.document_classifier_model\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"1.0.13\", \"closure\": \"closed_closed\"}, \"dependencies\": {\"options\": [\"any\", \"all\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dependencies\", \"description\": \"dependency on previous tasks to run\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"any\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.dependencies\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"1.0.13\"}, \"bypass_classification\": {\"options\": [true, false], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"bypass classification\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": false, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.bypass_classification\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"8.6\"}, \"default_class\": {\"api\": \"/document/document_class/get\", \"trigger\": \"get_doc_classes\", \"options\": \"result.metadata.doc_classes\", \"request_data\": {}, \"display_key\": \"doc_class_name\", \"value_key\": \"doc_class_id\", \"custom_request_data\": [], \"name\": \"default document class\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": null, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.default_class\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"PlatformApiListConfiguration\", \"_XpmsObjectMixin__api_version\": \"8.6\"}}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "10"
+    },
+    "category_id": "category_4",
+    "category": "Document Processing",
+    "service_name": "classify_document",
+    "service_type": "INTERNAL"
+}

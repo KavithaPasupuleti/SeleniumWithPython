@@ -1,0 +1,20 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions",
+    "name": "retrieve_docs",
+    "description": "",
+    "cts": "2020-09-15T18:41:13.821911",
+    "is_deleted": false,
+    "uts": "2020-09-15T18:41:13.821921",
+    "default_version": "86245f89-6fa6-4bc5-814c-57ce632ffded",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "task_id": "97e776b8-1990-4df8-af01-3aead8dc3ac9"
+}

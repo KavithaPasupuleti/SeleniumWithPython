@@ -1,0 +1,4 @@
+outs:
+- md5: a82d856df279188b24074ef58635a2ba
+  size: 21762
+  path: core_error_model_0.9.pkl

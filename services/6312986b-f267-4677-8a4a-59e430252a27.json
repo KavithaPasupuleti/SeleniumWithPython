@@ -1,0 +1,38 @@
+{
+    "name": "extract_metadata_img",
+    "description": "service to extract metadata of image from hocr",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:09.174897",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "6312986b-f267-4677-8a4a-59e430252a27",
+    "service_key": "extract_metadata_img_key",
+    "display_name": "Extract Document Metadata Image",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"data\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}}, \"required\": [\"doc_id\"]}, \"trigger\": {\"enum\": [\"extract_metadata_img\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"data\"]}",
+    "response_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"metadata\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}, \"document_metadata\": {\"type\": \"object\"}}, \"required\": [\"doc_id\"]}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"extract_metadata_img_response\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"metadata\"]}",
+    "request_trigger": "extract_metadata_img",
+    "response_trigger": "extract_metadata_img_response",
+    "headers": {},
+    "service_configuration": "{}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "10"
+    },
+    "category_id": "category_2",
+    "category": "Image Processing",
+    "service_name": "extract_metadata_img",
+    "service_type": "INTERNAL"
+}

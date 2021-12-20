@@ -1,0 +1,13 @@
+{
+    "_XpmsObjectMixin__type": "CustomBinary",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "name": "default_handwriting_model",
+    "size": 14858855,
+    "description": "",
+    "file_name": "forms.pt",
+    "file_path": "binaries/97036a6c-c422-442b-b7ea-1172b84908d8/forms.pt",
+    "archive": false,
+    "resource_id": "97036a6c-c422-442b-b7ea-1172b84908d8",
+    "created_ts": "2021-04-03T08:30:54.955602",
+    "update_ts": ""
+}

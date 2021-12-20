@@ -1,0 +1,24 @@
+{
+    "pipeline_id": "7c2f885f-3865-48c4-8f48-ba406ac1dbe1",
+    "pulse_enabled": false,
+    "input_schema": {},
+    "output_schema": {},
+    "is_enabled": true,
+    "category": "model_pipeline",
+    "name": "error_0_1_base_version",
+    "description": "",
+    "cts": "2019-07-18T09:53:34.019461",
+    "is_deleted": false,
+    "uts": "2021-07-05T10:31:06.774867",
+    "default_version": "b82c5c64-146b-4ef4-a817-8da7dda4583b",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "_XpmsObjectMixin__type": "Pipeline",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "generate_api": false
+}

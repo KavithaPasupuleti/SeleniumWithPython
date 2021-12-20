@@ -1,0 +1,173 @@
+{
+    "create_ts": "2021-09-30 08:55:36.462409",
+    "task_id": "zplovXFRTcCnyKR-sCyypA",
+    "version_id": "v1",
+    "task_name": "Generate Recommendations",
+    "task_class": "xpms_lib_dag.tasks.mq_task.MqTask",
+    "name": "Generate Recommendations",
+    "description": "gives back recommendation object after running provided data on the indicated model",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "conditions": null,
+        "service_name": "generate_recommendations",
+        "trigger": "process_insights"
+    },
+    "exec_type": null,
+    "category": "services.Model Execution",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "x_config": [
+            {
+                "api": "ml/model/get",
+                "trigger": "get_model_details",
+                "options": "result.metadata.models",
+                "request_data": {
+                    "model": {
+                        "is_enabled": true
+                    }
+                },
+                "display_key": "name",
+                "value_key": "model_id",
+                "custom_request_data": [],
+                "name": "model",
+                "description": "select the model in model repository that you want to use",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.data.model.model_id",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "PlatformApiListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "option_type": "dict"
+            },
+            {
+                "options": [
+                    "txt",
+                    "csv",
+                    "zip",
+                    "list",
+                    "files",
+                    "domain_object",
+                    "json"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dataset",
+                "description": "data format of the dataset",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "csv",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.data.dataset.data_format",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "value",
+                "description": "value of the dataset",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "",
+                "multi_select": false,
+                "hidden": true,
+                "config_path": "config.data.dataset.value",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "Transactional Commit",
+                "description": "Enable or Disable transactional commit",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": false,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.data.configuration.transactional_commit",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "min_value": 0,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "task_max_retries",
+                "description": "max no of retries",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 3,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_max_retries",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 0,
+                "max_value": 20000,
+                "closure": "closed_closed",
+                "name": "time_out",
+                "description": "max time out in seconds",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 0,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.time_out",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": "100",
+    "retries": 0,
+    "state": {},
+    "instance_id": "sPXQJN0vQr-i-39bOFo__w",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

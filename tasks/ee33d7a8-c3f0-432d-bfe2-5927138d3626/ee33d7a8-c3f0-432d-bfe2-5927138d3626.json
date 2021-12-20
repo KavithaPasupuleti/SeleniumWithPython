@@ -1,0 +1,20 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions",
+    "name": "benchmark_post_processing",
+    "description": "This function generates the required input for aggregator comparator",
+    "cts": "2020-09-15T18:41:34.926021",
+    "is_deleted": false,
+    "uts": "2020-09-15T18:41:34.926027",
+    "default_version": "78a0806b-8030-4106-a665-9ba8bc24cd94",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "task_id": "ee33d7a8-c3f0-432d-bfe2-5927138d3626"
+}

@@ -1,0 +1,110 @@
+{
+    "create_ts": "2021-09-30 08:55:36.494446",
+    "task_id": "44ZRJwEtTKy6M0AEvPcAtg",
+    "version_id": "v1",
+    "task_name": "Save Real Time Feedback",
+    "task_class": "xpms_lib_dag.tasks.mq_task.MqTask",
+    "name": "Save Real Time Feedback",
+    "description": "service to save the real time feedback",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "conditions": null,
+        "service_name": "save_realtime_feedback",
+        "trigger": "process_insights"
+    },
+    "exec_type": null,
+    "category": "services.Assisted Training",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "x_config": [
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "Transactional Commit",
+                "description": "Enable or Disable transactional commit",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.data.configuration.transactional_commit",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "min_value": 0,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "task_max_retries",
+                "description": "max no of retries",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 3,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_max_retries",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 0,
+                "max_value": 20000,
+                "closure": "closed_closed",
+                "name": "time_out",
+                "description": "max time out in seconds",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 0,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.time_out",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": "10",
+    "retries": 0,
+    "state": {},
+    "instance_id": "bSaBJGenTmWuCU52DcfKDg",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

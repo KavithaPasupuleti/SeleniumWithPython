@@ -1,0 +1,20 @@
+{
+    "name": "version 1",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-09-04T08:04:25.563486",
+    "uts": "2020-09-04T08:04:25.563497",
+    "_XpmsObjectMixin__type": "CustomFunctionVersion",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "is_enabled": true,
+    "is_deleted": false,
+    "is_default": true,
+    "is_published": true,
+    "function_id": "04b2a588-b0e8-452c-9322-b6a83a8b3503",
+    "function_name": "remove_redundant_data",
+    "version_id": "e577ec51-cead-4dbd-8a22-a58c2a4a5606",
+    "function_path": "functions/04b2a588-b0e8-452c-9322-b6a83a8b3503/e577ec51-cead-4dbd-8a22-a58c2a4a5606/04b2a588-b0e8-452c-9322-b6a83a8b3503_e577ec51-cead-4dbd-8a22-a58c2a4a5606.py",
+    "func_ipynb_path": "functions/04b2a588-b0e8-452c-9322-b6a83a8b3503/e577ec51-cead-4dbd-8a22-a58c2a4a5606/04b2a588-b0e8-452c-9322-b6a83a8b3503_e577ec51-cead-4dbd-8a22-a58c2a4a5606.ipynb",
+    "config": []
+}

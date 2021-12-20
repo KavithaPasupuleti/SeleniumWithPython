@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_postprocess_error_model",
+    "description": "imported git function",
+    "cts": "2021-09-14T09:06:46.599385",
+    "is_deleted": false,
+    "uts": "2021-09-14T09:06:46.599393",
+    "default_version": "511c6333-1d69-444f-8dad-e0017ad9c95d",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "b56474b3-cfb4-4ea0-88fa-94f9bd852734"
+}

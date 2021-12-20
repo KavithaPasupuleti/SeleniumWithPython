@@ -1,0 +1,22 @@
+{
+    "data_points": null,
+    "labels": null,
+    "stats": {},
+    "name": "default gan dataset",
+    "is_deleted": false,
+    "status": "ready",
+    "created_by": "user",
+    "modified_by": "user",
+    "file_path": "datasets/962e9fef-9e51-49a9-9c01-f40e03d764f1/file",
+    "source": "payload",
+    "data_format": "gan_zip",
+    "description": "Default GAN table model dataset",
+    "cts": "2020-05-20T14:36:40.088332",
+    "uts": "2020-10-12T10:03:24.232087",
+    "_XpmsObjectMixin__type": "Dataset",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "dataset_id": "962e9fef-9e51-49a9-9c01-f40e03d764f1",
+    "data_schema": null,
+    "tags": [],
+    "value": "datasets/962e9fef-9e51-49a9-9c01-f40e03d764f1/file"
+}

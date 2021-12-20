@@ -1,0 +1,251 @@
+{
+    "create_ts": "2021-09-30 08:55:08.361287",
+    "task_id": "rQez3GA5QJCD_Pyg9aI_BA",
+    "version_id": "v1",
+    "task_name": "SKL Logistic Regression Classifier",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "SKL Logistic Regression Classifier",
+    "description": "Sklearn Logistic regression Classifier",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "source_type": "lib",
+        "algorithm": {
+            "auto_tuner": {
+                "name": "grid_search"
+            },
+            "class": "sklearn.linear_model.LogisticRegression"
+        },
+        "source": "ml_lib.resources.task_scripts.classification_algo_skl_model_runner",
+        "files": [],
+        "model_class": "classification"
+    },
+    "exec_type": null,
+    "category": "ml.Ml Task",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "sklearn.classification.LogisticRegression",
+        "x_config": [
+            {
+                "options": [
+                    "accuracy"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "scorers",
+                "description": "evaluation_metrics",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.scorers",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "target",
+                "description": "target column",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "target",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.target",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "api": "ml/task/list_instances",
+                "trigger": "list_ml_task_instances",
+                "options": "result.metadata.tasks",
+                "request_data": {
+                    "model": {
+                        "model_id": "",
+                        "version_id": ""
+                    },
+                    "task": {
+                        "task_id": ""
+                    }
+                },
+                "display_key": "name",
+                "value_key": "instance_id",
+                "custom_request_data": [
+                    "model.model_id",
+                    "model.version_id",
+                    "task.task_id"
+                ],
+                "name": "task reference",
+                "description": "link a pre_existing task in the model",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "none",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_reference",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "PlatformApiListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "is_option_object": true
+            },
+            {
+                "options": [
+                    "l1",
+                    "l2"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "penalty",
+                "description": "Used to specify the norm used in the penalization.",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "l2",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.penalty",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "newton-cg",
+                    "lbfgs",
+                    "liblinear",
+                    "sag",
+                    "saga"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "solver",
+                "description": "Algorithm to use in the optimization problem. For small datasets, \u2018liblinear\u2019 is a good choice, whereas \u2018sag\u2019 and \u2018saga\u2019 are faster for large ones. For multiclass problems, only \u2018newton-cg\u2019, \u2018sag\u2019, \u2018saga\u2019 and \u2018lbfgs\u2019 handle multinomial loss; \u2018liblinear\u2019 is limited to one-versus-rest schemes. \u2018newton-cg\u2019, \u2018lbfgs\u2019, \u2018sag\u2019 and \u2018saga\u2019 handle L2 or no penalty \u2018liblinear\u2019 and \u2018saga\u2019 also handle L1 penalty \u2018saga\u2019 also supports \u2018elasticnet\u2019 penalty \u2018liblinear\u2019 does not handle no penalty",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "liblinear",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.solver",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "ovr",
+                    "multinomial",
+                    "auto"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "multi_class",
+                "description": "If the option chosen is \u2018ovr\u2019, then a binary problem is fit for each label. For \u2018multinomial\u2019 the loss minimised is the multinomial loss fit across the entire probability distribution, even when the data is binary. \u2018multinomial\u2019 is unavailable when solver=\u2019liblinear\u2019. \u2018auto\u2019 selects \u2018ovr\u2019 if the data is binary, or if solver=\u2019liblinear\u2019, and otherwise selects \u2018multinomial\u2019.",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "auto",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.multi_class",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 0,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "C",
+                "description": "Inverse of regularization strength",
+                "data_type": "float",
+                "op_type": "continuous",
+                "value": 1,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.C",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "dual",
+                "description": "Dual or primal formulation",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.dual",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "options": [
+                    true,
+                    false
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "multi_model",
+                "description": "to create model for each class",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": false,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.multi_model",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "6Ws3q1wiTymUqH44TPNx7g",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

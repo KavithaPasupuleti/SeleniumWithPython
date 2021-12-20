@@ -1,0 +1,39 @@
+{
+    "name": "transactional_commit",
+    "description": "Saves Platform objects",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:07.965533",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "48ab2178-545d-4e37-985c-bc63a15608d5",
+    "service_key": "transactional_commit",
+    "display_name": "Transactional Commit",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{}",
+    "response_schema": "{}",
+    "request_trigger": "transactional_commit",
+    "response_trigger": "transactional_commit_response",
+    "headers": {},
+    "service_configuration": "{\"dependencies\": {\"options\": [\"any\", \"all\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dependencies\", \"description\": \"dependency on previous tasks to run\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"any\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.dependencies\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "100"
+    },
+    "category_id": "category_3",
+    "category": "CRUD",
+    "microservice": "insight",
+    "service_name": "transactional_commit",
+    "service_type": "INTERNAL"
+}

@@ -1,0 +1,180 @@
+{
+    "create_ts": "2021-09-30 08:55:08.389280",
+    "task_id": "HG4-4koDTkKcz9uo8NvKeg",
+    "version_id": "v1",
+    "task_name": "SKL Iterative Imputer",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "SKL Iterative Imputer",
+    "description": "SKL Iterative Imputer",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "algorithm": {
+            "auto_tuner": {
+                "name": "grid_search"
+            },
+            "class": "sklearn.impute.IterativeImputer"
+        },
+        "source_type": "lib",
+        "source": "ml_lib.resources.task_scripts.dataset_iterative_imputer",
+        "files": []
+    },
+    "exec_type": null,
+    "category": "ml.Data Transformation",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "sklearn.imputation.IterativeImputer",
+        "x_config": [
+            {
+                "options": [
+                    "int",
+                    "np.nan"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "missing_values",
+                "description": "The placeholder for missing values. All occurrences of missing_values will be imputed",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "np.nan",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.missing_values",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "mean",
+                    "median",
+                    "constant"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "initial_strategy",
+                "description": "Which strategy to use to initialize the missing values",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "mean",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.initial_strategy",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": null,
+                "max_value": null,
+                "closure": "closed_closed",
+                "name": "fill_value_int",
+                "description": "fill_value is used to replace all occurrences of missing_values",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 0,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.fill_value",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 0,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "max_iter",
+                "description": "Maximum number of imputation rounds to perform before returning the imputations computed during the final round",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 10,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.max_iter",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 0.001,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "tol",
+                "description": "Tolerance of the stopping condition",
+                "data_type": "float",
+                "op_type": "continuous",
+                "value": 0.001,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.tol",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "ascending",
+                    "descending",
+                    "roman",
+                    "arabic",
+                    "random"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "imputation_order",
+                "description": "The order in which the features will be imputed",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "ascending",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.imputation_order",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "GDvg2b0oSOikyLcEs6RK9w",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

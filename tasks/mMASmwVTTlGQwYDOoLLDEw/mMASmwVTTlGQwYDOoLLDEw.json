@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.ingest_ab_data_pulse_task.IngestPulseData",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "is_enabled": true,
+    "category": "services.Pulse",
+    "name": "Ingest AB test data to pulse",
+    "description": "",
+    "cts": "",
+    "is_deleted": false,
+    "uts": "",
+    "default_version": "gtnBvjh_T0WoHUbyYe79uA",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "mMASmwVTTlGQwYDOoLLDEw"
+}

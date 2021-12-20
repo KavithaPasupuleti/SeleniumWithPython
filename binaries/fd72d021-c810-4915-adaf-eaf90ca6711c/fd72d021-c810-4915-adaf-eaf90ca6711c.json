@@ -1,0 +1,13 @@
+{
+    "_XpmsObjectMixin__type": "CustomBinary",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "name": "default_GAN_model",
+    "size": 59545,
+    "description": "default GAN model",
+    "file_name": "tf_model_903_1600.pb",
+    "file_path": "binaries/fd72d021-c810-4915-adaf-eaf90ca6711c/tf_model_903_1600.pb",
+    "archive": false,
+    "resource_id": "fd72d021-c810-4915-adaf-eaf90ca6711c",
+    "created_ts": "2020-09-04T08:03:35.791954",
+    "update_ts": ""
+}

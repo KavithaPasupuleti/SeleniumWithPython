@@ -1,0 +1,34 @@
+{
+    "pipeline": {
+        "pipeline_id": "8cb99606-7198-4696-a307-dd653ff64d2b",
+        "source": {
+            "model_type": "ganmodel",
+            "pipeline_template_name": "empty"
+        },
+        "source_type": "template",
+        "pipeline_name": "default GAN table model_base_version",
+        "version_id": "70ea7430-01c5-41a7-afa3-0ff44813d346"
+    },
+    "evaluation": null,
+    "training_dataset": "962e9fef-9e51-49a9-9c01-f40e03d764f1",
+    "model_type": "ganmodel",
+    "data_format": "gan_zip",
+    "status": "trained",
+    "version_id": "70ea7430-01c5-41a7-afa3-0ff44813d346",
+    "data_schema": {},
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_default": true,
+    "is_published": true,
+    "parent_version": "70ea7430-01c5-41a7-afa3-0ff44813d346",
+    "model_id": "5a92d9d6-d193-45a5-979d-cb2fbcfd785f",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "_XpmsObjectMixin__type": "MLModelVersion",
+    "created_by": "system",
+    "cts": "2020-06-05T13:43:12.473619",
+    "description": "",
+    "modified_by": "system",
+    "name": "base_version",
+    "retraining_threshold": 1,
+    "uts": "2020-09-06T07:32:34.283420"
+}

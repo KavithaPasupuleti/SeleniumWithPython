@@ -1,0 +1,98 @@
+{
+    "create_ts": "2021-09-30 08:55:08.400759",
+    "task_id": "a5FyZrNDRoWMKqtiJMfo7A",
+    "version_id": "v1",
+    "task_name": "GAN table detection model",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "GAN table detection model",
+    "description": "Table detection using GAN",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "source_type": "lib",
+        "model_class": "classification",
+        "algorithm": "",
+        "source": "ml_lib.resources.task_scripts.gan_model_runner",
+        "files": []
+    },
+    "exec_type": null,
+    "category": "ml.Element Extraction",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "tf.classification",
+        "x_config": [
+            {
+                "api": "faas/binaries/get",
+                "trigger": "get_binaries",
+                "options": "result.metadata.binaries",
+                "request_data": {},
+                "display_key": "name",
+                "value_key": "file_path",
+                "custom_request_data": [],
+                "name": "model_file",
+                "description": "select the trained model file that you want to use",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.binary.model_file",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "PlatformApiListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "option_type": "dict"
+            },
+            {
+                "name": "target",
+                "description": "target column",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "output",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.target",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "OPswhMI0R_qOfDb2k2vYkw",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

@@ -1,0 +1,78 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2021-07-05T10:22:29.470398",
+    "uts": "2021-07-05T10:26:22.393395",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "model_id": "d3d7fd16-825a-4762-a514-b66b8bf83a42",
+    "model_type": "classification",
+    "scoring_metric": "accuracy",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {
+            "accuracy": 0.9866666666666667,
+            "precision": 0.9868852459016394,
+            "recall": 0.9866666666666667,
+            "f1": 0.9864043027679391
+        },
+        "classes": {
+            "0": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 4
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9090909090909091,
+                "f1-score": 0.9523809523809523,
+                "support": 11
+            },
+            "2": {
+                "precision": 0.9836065573770492,
+                "recall": 1.0,
+                "f1-score": 0.9917355371900827,
+                "support": 60
+            }
+        }
+    },
+    "model_config_id": "9493ed23-02dc-4bd8-a617-92aa8f0b12b8",
+    "is_deleted": false,
+    "model_comparisons": {
+        "1e655d07-c9e1-49ff-bcf2-a385ab65a962": {
+            "0caf0006-9700-4054-8f10-2b239704eef0": {
+                "classes": {
+                    "0": {
+                        "precision": 1.0,
+                        "recall": 1.0,
+                        "f1-score": 1.0,
+                        "support": 4
+                    },
+                    "1": {
+                        "precision": 1.0,
+                        "recall": 0.9090909090909091,
+                        "f1-score": 0.9523809523809523,
+                        "support": 11
+                    },
+                    "2": {
+                        "precision": 0.9836065573770492,
+                        "recall": 1.0,
+                        "f1-score": 0.9917355371900827,
+                        "support": 60
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.9866666666666667,
+                    "precision": 0.9868852459016394,
+                    "recall": 0.9866666666666667,
+                    "f1": 0.9864043027679391
+                },
+                "is_recommended": true,
+                "is_cutoff_passed": true
+            }
+        }
+    }
+}

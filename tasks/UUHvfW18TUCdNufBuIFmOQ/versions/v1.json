@@ -1,0 +1,132 @@
+{
+    "create_ts": "2021-09-30 08:55:08.394880",
+    "task_id": "UUHvfW18TUCdNufBuIFmOQ",
+    "version_id": "v1",
+    "task_name": "SKL Standard Scaler",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "SKL Standard Scaler",
+    "description": "Scikit-Learn Wrapper interface for Standard Scaler.",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "algorithm": {
+            "auto_tuner": {
+                "name": "grid_search"
+            },
+            "class": "sklearn.preprocessing.StandardScaler"
+        },
+        "source_type": "lib",
+        "source": "ml_lib.resources.task_scripts.preprocessing_standard_scaler",
+        "files": []
+    },
+    "exec_type": null,
+    "category": "ml.Data Transformation",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "sklearn.preprocessing.StandardScaler",
+        "x_config": [
+            {
+                "name": "copy",
+                "description": "To copy or not",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.copy",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "name": "Column Name/s",
+                "description": "Column names on which imputation is to be performed",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "all",
+                "multi_select": true,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.col_name",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "with_mean",
+                "description": "To use mean or not",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.with_mean",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "name": "with_std",
+                "description": "To use std or not",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.with_std",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "dra9wSmXQee5BNUwYQW8Lw",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

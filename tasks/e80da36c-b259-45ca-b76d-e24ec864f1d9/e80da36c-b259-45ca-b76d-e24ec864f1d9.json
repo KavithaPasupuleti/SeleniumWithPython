@@ -1,0 +1,20 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions",
+    "name": "transform_process_feedback",
+    "description": "",
+    "cts": "2020-09-15T18:41:30.112980",
+    "is_deleted": false,
+    "uts": "2020-09-15T18:41:30.112987",
+    "default_version": "6e565439-bc10-4d2f-bb11-1fad88fa83cf",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "task_id": "e80da36c-b259-45ca-b76d-e24ec864f1d9"
+}

@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_check_feedback_file_exists",
+    "description": "imported git function",
+    "cts": "2021-09-30T07:33:40.787175",
+    "is_deleted": false,
+    "uts": "2021-09-30T07:33:40.787186",
+    "default_version": "3962416e-621a-4046-b04b-6115dd847ed5",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "b82d24a1-8d27-49e6-8972-729c28bd122f"
+}

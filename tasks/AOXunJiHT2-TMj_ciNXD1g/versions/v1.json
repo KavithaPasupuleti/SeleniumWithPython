@@ -1,0 +1,164 @@
+{
+    "create_ts": "2021-09-30 08:55:08.393827",
+    "task_id": "AOXunJiHT2-TMj_ciNXD1g",
+    "version_id": "v1",
+    "task_name": "SKL Robust Scaler",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "SKL Robust Scaler",
+    "description": "Scikit-Learn Wrapper interface for Robust Scaler.",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "algorithm": {
+            "auto_tuner": {
+                "name": "grid_search"
+            },
+            "class": "sklearn.preprocessing.RobustScaler"
+        },
+        "source_type": "lib",
+        "source": "ml_lib.resources.task_scripts.preprocessing_robust_scaler",
+        "files": []
+    },
+    "exec_type": null,
+    "category": "ml.Data Transformation",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "sklearn.preprocessing.RobustScaler",
+        "x_config": [
+            {
+                "name": "Column Name/s",
+                "description": "Column names on which imputation is to be performed",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "all",
+                "multi_select": true,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.col_name",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "with centering",
+                "description": "If True, center the data before scaling.",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.with_centering",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "name": "with_scaling",
+                "description": "If True, scale the data to interquartile range",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.with_scaling",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "min_value": 0,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "quantile_range_min",
+                "description": "Min value of Quantile range used to calculate scale_",
+                "data_type": "float",
+                "op_type": "continuous",
+                "value": 25,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.quantile_range_min",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 0,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "quantile_range_max",
+                "description": "Max value of Quantile range used to calculate scale_",
+                "data_type": "float",
+                "op_type": "continuous",
+                "value": 75,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.quantile_range_max",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "copy",
+                "description": "To copy or not",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.copy",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "o3CYyFzXTsqgliyq59bn5w",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

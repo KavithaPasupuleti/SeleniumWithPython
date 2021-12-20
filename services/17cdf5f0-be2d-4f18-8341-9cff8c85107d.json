@@ -1,0 +1,38 @@
+{
+    "name": "extract_doc_entities",
+    "description": "service to extract entities from a document",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:09.354335",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "17cdf5f0-be2d-4f18-8341-9cff8c85107d",
+    "service_key": "extracted_entities",
+    "display_name": "Extract Document Entities",
+    "feedback_supported": true,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"data\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}}, \"required\": [\"doc_id\"]}, \"trigger\": {\"enum\": [\"extract_doc_entities\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"data\"]}",
+    "response_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"metadata\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}, \"extracted_entities\": {\"type\": \"array\"}}, \"required\": [\"doc_id\"]}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"extract_doc_entities_response\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"metadata\"]}",
+    "request_trigger": "extract_doc_entities",
+    "response_trigger": "extract_doc_entities_response",
+    "headers": {},
+    "service_configuration": "{\"enable_svo_linking\": {\"options\": [true, false], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Enable SVO linking\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": false, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.enable_svo_linking\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"8.6\"}, \"enable_similarity_matching\": {\"options\": [true, false], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Enable Similarity Matching\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": false, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.enable_similarity_matching\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"8.6\"}, \"enable_spell_correction\": {\"options\": [true, false], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Enable Spell Correction\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": false, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.enable_spell_correction\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"8.6\"}, \"enable_fuzzy_matching\": {\"options\": [true, false], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Enable Fuzzy Matching\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": false, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.enable_fuzzy_matching\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"8.6\"}, \"attribute_confidence_threshold\": {\"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Attribute Confidence Cutoff Threshold\", \"description\": \"set the attribute confidence cutoff threshold in float\", \"data_type\": \"float\", \"op_type\": \"continuous\", \"value\": 0.0, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.attribute_confidence_threshold\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}, \"negex_preceeding_patterens\": {\"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Preceeding Patterns for Negex\", \"description\": \"preceeding Patterens for Negex\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.negex_preceeding_patterens\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}, \"negex_following_patterens\": {\"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Following patterens for negex\", \"description\": \"Following Patterens for Negex\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.negex_following_patterens\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}, \"remove_null_values\": {\"options\": [\"yes\", \"no\"], \"is_option_object\": true, \"display_key\": null, \"value_key\": null, \"name\": \"Remove Null Values\", \"description\": \"Remove null values from Entity linking\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"yes\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.remove_null_values\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}, \"enable_similarity_key_match\": {\"options\": [true, false], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"Enable Similarity Key Match\", \"description\": \"\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": false, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.enable_similarity_key_match\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}, \"remove_field_synonym\": {\"options\": [\"yes\", \"no\"], \"is_option_object\": true, \"display_key\": null, \"value_key\": null, \"name\": \"Remove Field Synonym\", \"description\": \"Remove field synonyms from Entity linking\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"no\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.remove_field_synonym\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}, \"merge_entity_groups\": {\"options\": [\"yes\", \"no\"], \"is_option_object\": true, \"display_key\": null, \"value_key\": null, \"name\": \"Merge Entity Groups\", \"description\": \"Merge entity groups in linking\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"no\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.merge_entity_groups\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.0\"}}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "240"
+    },
+    "category_id": "category_3",
+    "category": "Entity Linking",
+    "service_name": "extract_doc_entities",
+    "service_type": "INTERNAL"
+}

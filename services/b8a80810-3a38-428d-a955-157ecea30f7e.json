@@ -1,0 +1,38 @@
+{
+    "name": "extract_hocr_tesseract",
+    "description": "service to extract hocr from scanned document images",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:09.138550",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "b8a80810-3a38-428d-a955-157ecea30f7e",
+    "service_key": "extract_hocr_tesseract_key",
+    "display_name": "Extract Document Hocr tesseract",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"data\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}}, \"required\": [\"doc_id\"]}, \"trigger\": {\"enum\": [\"extract_hocr_tesseract\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"data\"]}",
+    "response_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"metadata\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": \"string\"}, \"extracted_document_hocr\": {\"type\": \"array\"}}, \"required\": [\"doc_id\"]}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"extract_hocr_tesseract_response\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"metadata\"]}",
+    "request_trigger": "extract_hocr_tesseract",
+    "response_trigger": "extract_hocr_tesseract_response",
+    "headers": {},
+    "service_configuration": "{\"dependencies\": {\"options\": [\"any\", \"all\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dependencies\", \"description\": \"dependency on previous tasks to run\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"any\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.dependencies\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.8\"}, \"PSM MODE\": {\"min_value\": 0, \"max_value\": 13, \"closure\": \"closed_closed\", \"name\": \"PSM MODE\", \"description\": \"PSM mode to run tesseract\", \"data_type\": \"integer\", \"op_type\": \"continuous\", \"value\": 6, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.psm\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"NumericConfiguration\", \"_XpmsObjectMixin__api_version\": \"9.8\"}}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "10"
+    },
+    "category_id": "category_2",
+    "category": "Image Processing",
+    "service_name": "extract_hocr_tesseract",
+    "service_type": "INTERNAL"
+}

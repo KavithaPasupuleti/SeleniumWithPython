@@ -1,0 +1,35 @@
+{
+    "name": "version 1",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2021-09-14T08:11:02.856395",
+    "uts": "2021-09-14T08:11:23.111559",
+    "_XpmsObjectMixin__type": "CustomFunctionVersion",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "is_enabled": true,
+    "is_deleted": false,
+    "is_default": true,
+    "is_published": true,
+    "function_id": "1b0b8597-4cf6-45ff-b11b-7a98a1f679a1",
+    "function_name": "hma_read_csv_ts",
+    "version_id": "21355414-21b8-4ab4-bdee-c6cb71745606",
+    "function_path": "functions/1b0b8597-4cf6-45ff-b11b-7a98a1f679a1/21355414-21b8-4ab4-bdee-c6cb71745606/1b0b8597-4cf6-45ff-b11b-7a98a1f679a1_21355414-21b8-4ab4-bdee-c6cb71745606.py",
+    "func_ipynb_path": "functions/1b0b8597-4cf6-45ff-b11b-7a98a1f679a1/21355414-21b8-4ab4-bdee-c6cb71745606/1b0b8597-4cf6-45ff-b11b-7a98a1f679a1_21355414-21b8-4ab4-bdee-c6cb71745606.ipynb",
+    "config": [
+        {
+            "fieldType": "textbox",
+            "config_path": "config.functionconfiguration.number_of_files",
+            "data_type": "string",
+            "description": "",
+            "hidden": false,
+            "multi_select": false,
+            "name": "number_of_files",
+            "op_type": "continuous",
+            "ui_component": "",
+            "value": null,
+            "_XpmsObjectMixin__api_version": "1.0.13",
+            "_XpmsObjectMixin__type": "StringConfiguration"
+        }
+    ]
+}

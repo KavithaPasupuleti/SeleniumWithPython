@@ -1,0 +1,38 @@
+{
+    "name": "apply_document_rule_obj",
+    "description": "service to update rules in document metadata",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:08.995414",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "987bd48f-7d0e-4db3-8804-0711343d8803",
+    "service_key": "apply_document_rule_obj_key",
+    "display_name": "Apply_document_rule_obj",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"data\": {\"type\": \"object\", \"properties\": {\"file_path\": {\"type\": \"string\"}}, \"required\": [\"file_path\"]}, \"metadata\": {\"type\": \"object\", \"properties\": {\"insight_id\": {\"type\": \"string\"}}}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"apply_document_rule_obj\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"data\"]}",
+    "response_schema": "{\"type\": \"object\", \"properties\": {\"request_id\": {\"type\": \"string\"}, \"solution_id\": {\"type\": \"string\"}, \"metadata\": {\"type\": \"object\", \"properties\": {\"doc_id\": {\"type\": [\"string\", \"array\"]}, \"required\": [\"doc_id\"]}}, \"data\": {\"type\": \"object\", \"properties\": {}}, \"status\": {\"type\": \"object\"}, \"trigger\": {\"enum\": [\"apply_document_rule_obj_response\"]}}, \"required\": [\"request_id\", \"solution_id\", \"trigger\", \"metadata\"]}",
+    "request_trigger": "apply_document_rule_obj",
+    "response_trigger": "apply_document_rule_obj_response",
+    "headers": {},
+    "service_configuration": "{}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "10"
+    },
+    "category_id": "category_4",
+    "category": "Rule",
+    "service_name": "apply_document_rule_obj",
+    "service_type": "INTERNAL"
+}

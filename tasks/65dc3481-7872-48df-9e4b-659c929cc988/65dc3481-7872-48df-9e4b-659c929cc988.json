@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_preprocess",
+    "description": "imported git function",
+    "cts": "2021-09-14T09:08:49.191434",
+    "is_deleted": false,
+    "uts": "2021-09-14T09:08:49.191443",
+    "default_version": "9fb9a67a-44bf-447c-8a91-7f2d26a1ac4f",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "65dc3481-7872-48df-9e4b-659c929cc988"
+}

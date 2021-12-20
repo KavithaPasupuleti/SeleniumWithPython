@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.dag_task.DagTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "is_enabled": true,
+    "category": "pipeline",
+    "name": "cron_mainpipeline",
+    "description": "",
+    "cts": "2021-09-14T13:28:06.229271",
+    "is_deleted": false,
+    "uts": "2021-09-14T13:28:06.229280",
+    "default_version": "0ede2ed2-a755-4ea5-b64a-9c838dab38df",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "d3808ffe-d7b6-47d5-8bd3-0455fcc60543"
+}
