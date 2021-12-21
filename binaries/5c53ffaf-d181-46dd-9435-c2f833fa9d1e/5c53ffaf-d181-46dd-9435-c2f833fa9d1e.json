@@ -1,0 +1,13 @@
+{
+    "_XpmsObjectMixin__type": "CustomBinary",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "name": "audit pkl ",
+    "size": 10219,
+    "description": "",
+    "file_name": "audit_model_core_0.9.pkl",
+    "file_path": "binaries/5c53ffaf-d181-46dd-9435-c2f833fa9d1e/audit_model_core_0.9.pkl",
+    "archive": false,
+    "resource_id": "5c53ffaf-d181-46dd-9435-c2f833fa9d1e",
+    "created_ts": "2021-07-02T10:05:05.534855",
+    "update_ts": ""
+}

@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.aggregation_task.Aggregator",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "is_enabled": true,
+    "category": "services.Document Aggregation",
+    "name": "Aggregation task",
+    "description": "",
+    "cts": "",
+    "is_deleted": false,
+    "uts": "",
+    "default_version": "Z2xUkb8UTl6AVDZg4f4VhA",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "XSawK1H_Rkmp2vt8fhYN8g"
+}

@@ -1,0 +1,126 @@
+{
+    "model_id": "285b45d2-2620-43f0-8b2e-d5e8ee8e3ef8",
+    "data_format": "csv",
+    "exec_grp_id": "0c29aec5-3744-45c0-93d5-eccf0f91b227",
+    "dependency_package": "default_dependency_package_group",
+    "retraining_threshold": 1,
+    "default_version": {
+        "pipeline": {
+            "pipeline_id": "39fa1457-ef40-4053-af27-c1004920713d",
+            "source": {
+                "model_type": "classification",
+                "pipeline_template_name": "empty"
+            },
+            "source_type": "template",
+            "pipeline_name": "default page group classifier_base_version",
+            "version_id": "f7e673d3-0fee-4bea-81e5-94cf787d5e78"
+        },
+        "evaluation": {
+            "68170231-2b25-46dc-8799-c4d935ae23a0": {
+                "scores": {
+                    "accuracy": 1.0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0
+                },
+                "model_class": "classification",
+                "confusion_metrics": [
+                    [
+                        5,
+                        0
+                    ],
+                    [
+                        0,
+                        6
+                    ]
+                ],
+                "stats": {
+                    "reconstructed_matrix": [
+                        [
+                            45.45454545454545,
+                            0.0,
+                            45.45454545454545
+                        ],
+                        [
+                            0.0,
+                            54.54545454545455,
+                            54.54545454545455
+                        ],
+                        [
+                            45.45454545454545,
+                            54.54545454545455,
+                            100.0
+                        ]
+                    ],
+                    "true_positive": 5,
+                    "true_negative": 6,
+                    "false_positive": 0,
+                    "false_negative": 0,
+                    "true_percentage": 100.0,
+                    "false_percentage": 0.0
+                },
+                "classes": {
+                    "class_names": [
+                        "0",
+                        "1"
+                    ],
+                    "scores": [
+                        {
+                            "precision": 1.0,
+                            "recall": 1.0,
+                            "f1-score": 1.0,
+                            "support": 5
+                        },
+                        {
+                            "precision": 1.0,
+                            "recall": 1.0,
+                            "f1-score": 1.0,
+                            "support": 6
+                        }
+                    ]
+                }
+            }
+        },
+        "training_dataset": "68170231-2b25-46dc-8799-c4d935ae23a0",
+        "model_type": "classification",
+        "data_format": "csv",
+        "status": "trained",
+        "version_id": "f7e673d3-0fee-4bea-81e5-94cf787d5e78",
+        "data_schema": {},
+        "is_deleted": false,
+        "is_enabled": true,
+        "is_default": true,
+        "is_published": true,
+        "parent_version": "f7e673d3-0fee-4bea-81e5-94cf787d5e78",
+        "model_id": "285b45d2-2620-43f0-8b2e-d5e8ee8e3ef8",
+        "solution_id": "impoerasset",
+        "_XpmsObjectMixin__api_version": "9.0",
+        "_XpmsObjectMixin__type": "MLModelVersion",
+        "created_by": "system",
+        "cts": "2020-06-05T12:45:51.897242",
+        "description": "",
+        "modified_by": "system",
+        "name": "base_version",
+        "retraining_threshold": 1,
+        "uts": "2020-09-06T07:32:43.970620"
+    },
+    "evaluation_datasets": [
+        "68170231-2b25-46dc-8799-c4d935ae23a0"
+    ],
+    "is_enabled": true,
+    "category": "classification",
+    "name": "default page group classifier",
+    "description": "",
+    "cts": "2020-06-05T12:45:51.903780",
+    "is_deleted": false,
+    "uts": "2020-09-06T07:32:45.692830",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "MLModel",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "is_default": true,
+    "metadata": [],
+    "model_type": "classification",
+    "template": "",
+    "template_id": "b63dbed1-bedc-4dec-a4cd-1a7e56fafa13"
+}

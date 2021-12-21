@@ -1,0 +1,41 @@
+{
+    "name": "run_model",
+    "description": "invokes run for the mentioned model",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:10.909642",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "61869514-ab58-4e2b-9dd0-eedb05a1da54",
+    "service_key": "run_model_key",
+    "display_name": "Run Model",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{}",
+    "response_schema": "{}",
+    "request_trigger": "run_model",
+    "response_trigger": "run_model_response",
+    "headers": {},
+    "service_configuration": "{\"model\": {\"api\": \"ml/model/get\", \"trigger\": \"get_model_details\", \"options\": \"result.metadata.models\", \"request_data\": {\"model\": {\"is_enabled\": true}}, \"display_key\": \"name\", \"value_key\": \"model_id\", \"custom_request_data\": [], \"name\": \"model\", \"description\": \"select the model in model repository that you want to use\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": null, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.model.model_id\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"PlatformApiListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\", \"option_type\": \"dict\"}, \"dataset\": {\"options\": [\"txt\", \"csv\", \"zip\", \"list\", \"files\", \"domain_object\", \"json\", \"serialized_data_frame\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dataset\", \"description\": \"data format of the dataset\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"csv\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.dataset.data_format\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}, \"value\": {\"name\": \"value\", \"description\": \"value of the dataset\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"\", \"multi_select\": false, \"hidden\": true, \"config_path\": \"config.data.dataset.value\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}, \"dependencies\": {\"options\": [\"any\", \"all\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dependencies\", \"description\": \"dependency on previous tasks to run\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"any\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.dependencies\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "100"
+    },
+    "category_id": "category_6",
+    "category": "Model Execution",
+    "microservice": "ml",
+    "service_name": "run_model",
+    "service_type": "INTERNAL",
+    "source": "ml_sync_lib.triggers.run_model.RunModelTrigger",
+    "task_type": "async"
+}

@@ -1,0 +1,26 @@
+{
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "ml.Data Transformation",
+    "name": "Split Dataset",
+    "description": "Splits a dataset into two datasets based on the split_ratio",
+    "cts": "",
+    "is_deleted": false,
+    "uts": "",
+    "default_version": "v1",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "QPShJa6JR9OKAn6ekFTGvQ"
+}

@@ -1,0 +1,41 @@
+{
+    "create_ts": "2021-09-30 08:55:08.354647",
+    "task_id": "PC8ToK-tSlycygAxwUmfbg",
+    "version_id": "v1",
+    "task_name": "Average",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "Average",
+    "description": "computes the sum of the incoming homogeneous datasets",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "source_type": "lib",
+        "source": "ml_lib.resources.task_scripts.dataset_custom_merge_datasets",
+        "files": []
+    },
+    "exec_type": null,
+    "category": "ml.Data Transformation",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "format_conversions.merge_datasets",
+        "x_config": []
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "3vov8nWbT76L86GDogFIoA",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

@@ -1,0 +1,4 @@
+outs:
+- md5: 59f8c83ca2619a8b14ca405cde33fba8
+  size: 10219
+  path: audit_model_core_0.9.pkl

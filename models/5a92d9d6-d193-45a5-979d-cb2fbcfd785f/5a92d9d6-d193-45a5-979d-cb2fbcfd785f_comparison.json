@@ -1,0 +1,20 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-06-05T13:43:12.519064",
+    "uts": "2020-09-06T07:32:21.818764",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "model_id": "5a92d9d6-d193-45a5-979d-cb2fbcfd785f",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {}
+    },
+    "is_deleted": false,
+    "model_comparisons": {},
+    "model_config_id": "f247232e-dd8b-4b32-8cc3-e00751fe82cb",
+    "model_type": "ganmodel",
+    "scoring_metric": ""
+}

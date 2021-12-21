@@ -1,0 +1,96 @@
+{
+    "create_ts": "2021-09-30 08:54:41.984203",
+    "task_id": "vZ7egRLjSE6wstTnMtRHbw",
+    "version_id": "ahspJNQQS8WX9ZZjDKzVPQ",
+    "task_name": "Review Task",
+    "task_class": "xpms_lib_dag.tasks.user_review_task.UserReviewTask",
+    "name": "Review Task",
+    "description": "",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {},
+    "exec_type": null,
+    "category": "services.User Task",
+    "is_enabled": true,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "index": "services.review_task",
+        "x_config": [
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "review_classification",
+                    "review_extraction",
+                    "review_entity"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "Document State",
+                "description": "",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "review_classification",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.service.configuration.doc_state",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "Transactional Commit",
+                "description": "Enable or Disable transactional commit",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": true,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.data.configuration.transactional_commit",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "BooleanConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "options": [
+                    true,
+                    false
+                ]
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "p4wENOaPTWyde8BCFrqfJQ",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

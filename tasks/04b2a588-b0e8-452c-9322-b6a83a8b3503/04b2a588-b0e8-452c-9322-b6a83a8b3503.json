@@ -1,0 +1,20 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions",
+    "name": "remove_redundant_data",
+    "description": "removes doc objects after processing e2e in confidence scores model training pipeline",
+    "cts": "2020-09-15T18:40:58.497078",
+    "is_deleted": false,
+    "uts": "2020-09-15T18:40:58.497087",
+    "default_version": "e577ec51-cead-4dbd-8a22-a58c2a4a5606",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "task_id": "04b2a588-b0e8-452c-9322-b6a83a8b3503"
+}

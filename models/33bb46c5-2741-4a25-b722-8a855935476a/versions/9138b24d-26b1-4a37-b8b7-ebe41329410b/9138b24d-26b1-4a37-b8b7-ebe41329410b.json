@@ -1,0 +1,34 @@
+{
+    "pipeline": {
+        "pipeline_id": "6979808c-7601-4adb-99e3-158b4f7ad7cd",
+        "source": {
+            "model_type": "object_detection",
+            "pipeline_template_name": "empty"
+        },
+        "source_type": "template",
+        "pipeline_name": "default hand writing model_base_version",
+        "version_id": "9138b24d-26b1-4a37-b8b7-ebe41329410b"
+    },
+    "evaluation": null,
+    "training_dataset": "962e9fef-9e51-49a9-9c01-f40e03d764f1",
+    "model_type": "object_detection",
+    "data_format": "gan_zip",
+    "status": "trained",
+    "version_id": "9138b24d-26b1-4a37-b8b7-ebe41329410b",
+    "data_schema": {},
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_default": true,
+    "is_published": true,
+    "parent_version": "9138b24d-26b1-4a37-b8b7-ebe41329410b",
+    "name": "base_version",
+    "model_id": "33bb46c5-2741-4a25-b722-8a855935476a",
+    "created_by": "system",
+    "modified_by": "3ff50857-5797-431a-be5e-6c75518761f3",
+    "description": "",
+    "cts": "2021-04-03T08:57:19.208032",
+    "uts": "2021-04-03T08:59:45.811542",
+    "_XpmsObjectMixin__type": "MLModelVersion",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "retraining_threshold": 500
+}

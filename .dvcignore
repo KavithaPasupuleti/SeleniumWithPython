@@ -1,0 +1,7 @@
+.dvcignore
+.gitignore
+*.md
+**/*.json
+**/*.py
+**/*.pyc
+**/*.ipynb

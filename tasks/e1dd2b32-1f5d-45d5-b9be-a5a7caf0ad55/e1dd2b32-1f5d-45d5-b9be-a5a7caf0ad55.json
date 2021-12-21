@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "split_hma_batches_record",
+    "description": "imported git function",
+    "cts": "2021-09-30T06:45:26.238889",
+    "is_deleted": false,
+    "uts": "2021-09-30T06:45:26.238901",
+    "default_version": "d194a11e-bf00-4592-8318-344638bc0902",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "e1dd2b32-1f5d-45d5-b9be-a5a7caf0ad55"
+}

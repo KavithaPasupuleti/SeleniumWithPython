@@ -1,0 +1,64 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-06-05T12:45:51.938060",
+    "uts": "2020-09-06T07:32:26.151573",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "model_id": "285b45d2-2620-43f0-8b2e-d5e8ee8e3ef8",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {
+            "recall": 0,
+            "precision": 0,
+            "f1": 0,
+            "accuracy": 0
+        },
+        "classes": {
+            "0": {
+                "recall": 0,
+                "precision": 0,
+                "f1-score": 0
+            },
+            "1": {
+                "recall": 0,
+                "precision": 0,
+                "f1-score": 0
+            }
+        }
+    },
+    "is_deleted": false,
+    "model_comparisons": {
+        "68170231-2b25-46dc-8799-c4d935ae23a0": {
+            "f7e673d3-0fee-4bea-81e5-94cf787d5e78": {
+                "classes": {
+                    "0": {
+                        "precision": 1.0,
+                        "recall": 1.0,
+                        "f1-score": 1.0,
+                        "support": 5
+                    },
+                    "1": {
+                        "precision": 1.0,
+                        "recall": 1.0,
+                        "f1-score": 1.0,
+                        "support": 6
+                    }
+                },
+                "scores": {
+                    "accuracy": 1.0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0
+                },
+                "is_recommended": true,
+                "is_cutoff_passed": true
+            }
+        }
+    },
+    "model_config_id": "7c53e072-5fef-44b9-835e-4390253d2d8d",
+    "model_type": "classification",
+    "scoring_metric": "accuracy"
+}

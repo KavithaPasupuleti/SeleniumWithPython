@@ -1,0 +1,128 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-06-20T09:04:32.302686",
+    "uts": "2020-09-06T07:32:20.335391",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "model_id": "82eea1da-23bf-4070-a309-8360ff194682",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {
+            "recall": 0.9779486830463486,
+            "precision": 0.9780639672241044,
+            "f1": 0.975607701288347,
+            "accuracy": 0.9779486830463486
+        },
+        "classes": {
+            "0": {
+                "precision": 0.9748451643639828,
+                "recall": 0.996687773989284,
+                "f1-score": 0.985645472061657,
+                "support": 10265
+            },
+            "1": {
+                "precision": 0.978401727861771,
+                "recall": 0.9714081486776269,
+                "f1-score": 0.9748923959827833,
+                "support": 1399
+            },
+            "2": {
+                "precision": 0.9829931972789115,
+                "recall": 0.5422138836772983,
+                "f1-score": 0.6989117291414751,
+                "support": 533
+            },
+            "3": {
+                "precision": 0.9900596421471173,
+                "recall": 0.9975961538461539,
+                "f1-score": 0.9938136100578727,
+                "support": 2496
+            }
+        }
+    },
+    "is_deleted": false,
+    "model_comparisons": {
+        "e3c9c1c0-4d7f-4dd1-99d3-c5f3899ebb86": {
+            "33ed37ca-fccd-42e8-97a2-514cf1cbf716": {
+                "classes": {
+                    "0": {
+                        "precision": 0.9818936877076412,
+                        "recall": 0.8719575158577961,
+                        "f1-score": 0.9236659113993281,
+                        "support": 6779
+                    },
+                    "1": {
+                        "precision": 0.46950710108604843,
+                        "recall": 0.939799331103679,
+                        "f1-score": 0.626183844011142,
+                        "support": 598
+                    },
+                    "2": {
+                        "precision": 0.043478260869565216,
+                        "recall": 0.028985507246376812,
+                        "f1-score": 0.034782608695652174,
+                        "support": 69
+                    },
+                    "3": {
+                        "precision": 0.39384615384615385,
+                        "recall": 0.9014084507042254,
+                        "f1-score": 0.5481798715203426,
+                        "support": 142
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.8701897733263046,
+                    "precision": 0.9219753175099777,
+                    "recall": 0.8701897733263046,
+                    "f1": 0.8851121104178435
+                },
+                "is_recommended": false,
+                "is_cutoff_passed": false
+            }
+        },
+        "a593db2f-2fe2-496f-8a25-32301fa45b96": {
+            "33ed37ca-fccd-42e8-97a2-514cf1cbf716": {
+                "classes": {
+                    "0": {
+                        "precision": 0.9748451643639828,
+                        "recall": 0.996687773989284,
+                        "f1-score": 0.985645472061657,
+                        "support": 10265
+                    },
+                    "1": {
+                        "precision": 0.978401727861771,
+                        "recall": 0.9714081486776269,
+                        "f1-score": 0.9748923959827833,
+                        "support": 1399
+                    },
+                    "2": {
+                        "precision": 0.9829931972789115,
+                        "recall": 0.5422138836772983,
+                        "f1-score": 0.6989117291414751,
+                        "support": 533
+                    },
+                    "3": {
+                        "precision": 0.9900596421471173,
+                        "recall": 0.9975961538461539,
+                        "f1-score": 0.9938136100578727,
+                        "support": 2496
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.9779486830463486,
+                    "precision": 0.9780639672241044,
+                    "recall": 0.9779486830463486,
+                    "f1": 0.975607701288347
+                },
+                "is_recommended": true,
+                "is_cutoff_passed": true
+            }
+        }
+    },
+    "model_config_id": "742a8210-d20e-498d-9aad-df3aa3c8c43f",
+    "model_type": "classification",
+    "scoring_metric": "accuracy"
+}

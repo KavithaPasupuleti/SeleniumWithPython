@@ -1,0 +1,24 @@
+{
+    "pipeline_id": "d336dabd-a811-4e1d-9e33-9c313255a514",
+    "pulse_enabled": false,
+    "input_schema": {},
+    "output_schema": {},
+    "is_enabled": true,
+    "category": "pipeline",
+    "name": "hma_feedback_pipeline",
+    "description": "",
+    "cts": "2021-09-30T07:37:20.901967",
+    "is_deleted": false,
+    "uts": "2021-09-30T07:42:59.880054",
+    "default_version": "d698f5b6-11f2-4c64-a728-47a9d0377ef9",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "_XpmsObjectMixin__type": "Pipeline",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "generate_api": false
+}

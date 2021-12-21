@@ -1,0 +1,23 @@
+{
+    "data_points": null,
+    "labels": null,
+    "stats": {},
+    "name": "default_text_classifier",
+    "is_deleted": false,
+    "status": "ready",
+    "created_by": "user",
+    "modified_by": "user",
+    "file_path": "datasets/9e0bf78d-aa38-433a-91ac-8fc1a1c0f75c/file",
+    "source": "payload",
+    "data_format": "zip",
+    "description": "default_text_classifier",
+    "cts": "2019-09-23T10:53:20.028299",
+    "uts": "2020-10-12T10:03:24.254383",
+    "_XpmsObjectMixin__type": "Dataset",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "dataset_id": "9e0bf78d-aa38-433a-91ac-8fc1a1c0f75c",
+    "data_schema": null,
+    "file_name": "default_text_classifier.zip",
+    "tags": [],
+    "value": "datasets/9e0bf78d-aa38-433a-91ac-8fc1a1c0f75c/file"
+}

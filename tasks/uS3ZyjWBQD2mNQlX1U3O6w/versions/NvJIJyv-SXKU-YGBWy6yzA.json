@@ -1,0 +1,58 @@
+{
+    "create_ts": "2021-09-30 08:54:41.990478",
+    "task_id": "uS3ZyjWBQD2mNQlX1U3O6w",
+    "version_id": "NvJIJyv-SXKU-YGBWy6yzA",
+    "task_name": "Update Split Task",
+    "task_class": "xpms_lib_dag.tasks.update_split_task.UpdateSplit",
+    "name": "Update Split Task",
+    "description": "",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {},
+    "exec_type": null,
+    "category": "services.Base",
+    "is_enabled": true,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "index": "services.update_split_task",
+        "x_config": [
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "d__kqU29QbOB1WA8XG7_5g",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

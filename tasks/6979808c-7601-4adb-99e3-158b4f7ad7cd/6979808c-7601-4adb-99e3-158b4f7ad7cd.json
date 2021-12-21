@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.dag_task.DagTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "is_enabled": true,
+    "category": "pipeline.Unknown",
+    "name": "default hand writing model_base_version",
+    "description": "",
+    "cts": "2019-07-18T09:54:16.585886",
+    "is_deleted": false,
+    "uts": "2019-07-18T09:54:16.585890",
+    "default_version": "b82c5c64-146b-4ef4-a817-8da7dda4583b",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "6979808c-7601-4adb-99e3-158b4f7ad7cd"
+}

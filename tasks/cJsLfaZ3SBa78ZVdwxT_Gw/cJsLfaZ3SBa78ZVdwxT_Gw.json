@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.mq_task.MqTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "is_enabled": true,
+    "category": "services.CRUD",
+    "name": "Export Document",
+    "description": "service to export document",
+    "cts": "",
+    "is_deleted": false,
+    "uts": "",
+    "default_version": "v1",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "cJsLfaZ3SBa78ZVdwxT_Gw"
+}

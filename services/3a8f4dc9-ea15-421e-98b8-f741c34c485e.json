@@ -1,0 +1,41 @@
+{
+    "name": "generate_recommendations",
+    "description": "gives back recommendation object after running provided data on the indicated model",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "2021-09-21T11:01:10.851895",
+    "_XpmsObjectMixin__type": "Service",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "service_id": "3a8f4dc9-ea15-421e-98b8-f741c34c485e",
+    "service_key": "generate_recommendations_key",
+    "display_name": "Generate Recommendations",
+    "feedback_supported": false,
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_service": true,
+    "object_type": [
+        "document"
+    ],
+    "request_schema": "{}",
+    "response_schema": "{}",
+    "request_trigger": "generate_recommendations",
+    "response_trigger": "generated_recommendations",
+    "headers": {},
+    "service_configuration": "{\"model\": {\"api\": \"ml/model/get\", \"trigger\": \"get_model_details\", \"options\": \"result.metadata.models\", \"request_data\": {\"model\": {\"is_enabled\": true}}, \"display_key\": \"name\", \"value_key\": \"model_id\", \"custom_request_data\": [], \"name\": \"model\", \"description\": \"select the model in model repository that you want to use\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": null, \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.model.model_id\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"PlatformApiListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\", \"option_type\": \"dict\"}, \"dataset\": {\"options\": [\"txt\", \"csv\", \"zip\", \"list\", \"files\", \"domain_object\", \"json\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dataset\", \"description\": \"data format of the dataset\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"csv\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.data.dataset.data_format\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}, \"value\": {\"name\": \"value\", \"description\": \"value of the dataset\", \"data_type\": \"string\", \"op_type\": \"continuous\", \"value\": \"\", \"multi_select\": false, \"hidden\": true, \"config_path\": \"config.data.dataset.value\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"StringConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}, \"dependencies\": {\"options\": [\"any\", \"all\"], \"is_option_object\": false, \"display_key\": null, \"value_key\": null, \"name\": \"dependencies\", \"description\": \"dependency on previous tasks to run\", \"data_type\": \"string\", \"op_type\": \"categorical\", \"value\": \"any\", \"multi_select\": false, \"hidden\": false, \"config_path\": \"config.dependencies\", \"ui_component\": \"\", \"_XpmsObjectMixin__type\": \"CategoricalListConfiguration\", \"_XpmsObjectMixin__api_version\": \"10.0\"}}",
+    "service_configuration_schema": "{}",
+    "feedback_endpoint": "",
+    "method": "GET",
+    "service_endpoint": "",
+    "timeout": {
+        "unit": "seconds",
+        "value": "100"
+    },
+    "category_id": "category_6",
+    "category": "Model Execution",
+    "microservice": "ml",
+    "service_name": "generate_recommendations",
+    "service_type": "INTERNAL",
+    "source": "ml_sync_lib.triggers.generate_recommendations.GenerateRecommendationsTrigger",
+    "task_type": "async"
+}

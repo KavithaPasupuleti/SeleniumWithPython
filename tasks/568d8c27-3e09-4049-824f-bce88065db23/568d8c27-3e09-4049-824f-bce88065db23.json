@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_split_files_status",
+    "description": "imported git function",
+    "cts": "2021-09-14T08:55:43.813417",
+    "is_deleted": false,
+    "uts": "2021-09-14T08:55:43.813426",
+    "default_version": "ef413d55-69d8-4bc4-a117-d4d390fa90b9",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "568d8c27-3e09-4049-824f-bce88065db23"
+}

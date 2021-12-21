@@ -1,0 +1,22 @@
+{
+    "data_points": null,
+    "labels": null,
+    "stats": {},
+    "name": "default_omr_classifier_train",
+    "is_deleted": false,
+    "status": "ready",
+    "created_by": "user",
+    "modified_by": "user",
+    "file_path": "datasets/d8b52064-fa53-401c-ad12-8be4a58ac08f/file",
+    "source": "payload",
+    "data_format": "csv",
+    "description": "",
+    "cts": "2020-10-11T08:51:55.310093",
+    "uts": "2020-10-12T10:03:24.351515",
+    "_XpmsObjectMixin__type": "Dataset",
+    "_XpmsObjectMixin__api_version": "9.5",
+    "dataset_id": "d8b52064-fa53-401c-ad12-8be4a58ac08f",
+    "data_schema": null,
+    "tags": [],
+    "value": "datasets/d8b52064-fa53-401c-ad12-8be4a58ac08f/file"
+}

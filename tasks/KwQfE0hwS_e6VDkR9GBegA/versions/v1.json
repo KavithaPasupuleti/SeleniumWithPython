@@ -1,0 +1,61 @@
+{
+    "create_ts": "2021-09-14 06:06:59.558932",
+    "task_id": "KwQfE0hwS_e6VDkR9GBegA",
+    "version_id": "v1",
+    "task_name": "Save Template",
+    "task_class": "xpms_lib_dag.tasks.mq_task.MqTask",
+    "name": "Save Template",
+    "description": "",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "conditions": null,
+        "service_name": "save_template",
+        "trigger": "save_template"
+    },
+    "exec_type": "async",
+    "category": "platform_api",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "x_config": [
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 30,
+    "retries": 0,
+    "state": {},
+    "instance_id": "WtwAGTp9Q_eP5djaDJopKw",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

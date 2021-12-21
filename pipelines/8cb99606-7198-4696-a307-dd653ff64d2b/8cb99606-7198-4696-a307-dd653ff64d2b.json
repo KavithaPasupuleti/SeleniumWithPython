@@ -1,0 +1,18 @@
+{
+    "pipeline_id": "8cb99606-7198-4696-a307-dd653ff64d2b",
+    "input_schema": {},
+    "output_schema": {},
+    "is_enabled": false,
+    "category": "model_pipeline",
+    "name": "default GAN table model_base_version",
+    "description": "",
+    "cts": "2019-07-18T09:53:34.019461",
+    "is_deleted": false,
+    "uts": "2020-06-05T13:48:05.208722",
+    "default_version": "70ea7430-01c5-41a7-afa3-0ff44813d346",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "Pipeline",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "generate_api": false
+}

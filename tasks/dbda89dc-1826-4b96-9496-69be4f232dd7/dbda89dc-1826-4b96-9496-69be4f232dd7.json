@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_move_feedback_to_completed",
+    "description": "imported git function",
+    "cts": "2021-09-30T07:34:19.752002",
+    "is_deleted": false,
+    "uts": "2021-09-30T07:34:19.752014",
+    "default_version": "21f0c10a-5cad-4be8-9789-21fe6c5d4313",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "dbda89dc-1826-4b96-9496-69be4f232dd7"
+}

@@ -1,0 +1,22 @@
+{
+    "data_points": null,
+    "labels": null,
+    "stats": {},
+    "name": "default key value classification dataset",
+    "is_deleted": false,
+    "status": "ready",
+    "created_by": "user",
+    "modified_by": "user",
+    "file_path": "datasets/a593db2f-2fe2-496f-8a25-32301fa45b96/file",
+    "source": "payload",
+    "data_format": "csv",
+    "description": "",
+    "cts": "2020-06-20T09:06:48.615084",
+    "uts": "2020-10-12T10:03:24.285925",
+    "_XpmsObjectMixin__type": "Dataset",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "dataset_id": "a593db2f-2fe2-496f-8a25-32301fa45b96",
+    "data_schema": null,
+    "tags": [],
+    "value": "datasets/a593db2f-2fe2-496f-8a25-32301fa45b96/file"
+}

@@ -1,0 +1,26 @@
+{
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "ml_function.ML Function",
+    "name": "audit_0_9",
+    "description": "",
+    "cts": "2021-07-02T11:11:48.667473",
+    "is_deleted": false,
+    "uts": "2021-07-02T11:11:48.667485",
+    "default_version": "5266b919-2cc8-4ef0-9397-6c003294ec3f",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "e7a65b5e-ac73-4440-ac32-fe894134a5bd"
+}

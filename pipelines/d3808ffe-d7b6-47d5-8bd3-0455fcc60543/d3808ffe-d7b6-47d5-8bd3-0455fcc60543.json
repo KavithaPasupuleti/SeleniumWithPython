@@ -1,0 +1,24 @@
+{
+    "pipeline_id": "d3808ffe-d7b6-47d5-8bd3-0455fcc60543",
+    "pulse_enabled": false,
+    "input_schema": {},
+    "output_schema": {},
+    "is_enabled": true,
+    "category": "pipeline",
+    "name": "cron_mainpipeline",
+    "description": "",
+    "cts": "2021-09-14T13:25:40.021919",
+    "is_deleted": false,
+    "uts": "2021-09-14T13:28:44.331482",
+    "default_version": "0ede2ed2-a755-4ea5-b64a-9c838dab38df",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "_XpmsObjectMixin__type": "Pipeline",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "generate_api": false
+}

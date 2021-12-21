@@ -1,0 +1,81 @@
+{
+    "create_ts": "2021-09-30 08:54:41.980707",
+    "task_id": "pDcKbMzvTpitazEAALaKMw",
+    "version_id": "6AYY69FJTRCxV5SXfcIZcA",
+    "task_name": "Invoke Rule Task",
+    "task_class": "xpms_lib_dag.tasks.invoke_rule_task.Invoke_Rule",
+    "name": "Invoke Rule Task",
+    "description": "",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {},
+    "exec_type": null,
+    "category": "services.Rule",
+    "is_enabled": true,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "index": "services.invoke_rule_task",
+        "x_config": [
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "api": "/rules/fetch_ruleslist",
+                "trigger": null,
+                "options": "metadata.rules_list",
+                "request_data": {
+                    "solution_id": "30sep22",
+                    "onlyenabled": true
+                },
+                "display_key": "rule_set_name",
+                "value_key": "rule_set_id",
+                "custom_request_data": [],
+                "name": "rules",
+                "description": "select the rule set id which you want to use for executions",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.rule_set_id",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "PlatformApiListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "rkAM0zG1Rza5MRu3Y4rq0A",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

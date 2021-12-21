@@ -1,0 +1,99 @@
+{
+    "pipeline": {
+        "pipeline_id": "0d014aa0-50f3-4ab4-9177-3eb0d98ce188",
+        "source": {
+            "model_type": "classification",
+            "pipeline_template_name": "default_confidence_model"
+        },
+        "source_type": "template",
+        "pipeline_name": "audit_model_base_version",
+        "version_id": "840e8640-a108-47c2-ba89-c0869ed284f6"
+    },
+    "evaluation": {
+        "d4020ef2-784c-4e0e-8e10-f248c142f190": {
+            "scores": {
+                "accuracy": 0.9046867114880593,
+                "precision": 0.998493957115461,
+                "recall": 0.9046867114880593,
+                "f1": 0.9484720938994204
+            },
+            "model_class": "classification",
+            "confusion_metrics": [
+                [
+                    94,
+                    0
+                ],
+                [
+                    5855,
+                    55480
+                ]
+            ],
+            "stats": {
+                "reconstructed_matrix": [
+                    [
+                        0.1530221882172915,
+                        0.0,
+                        0.1530221882172915
+                    ],
+                    [
+                        9.531328851194061,
+                        90.31564896058865,
+                        99.84697781178271
+                    ],
+                    [
+                        9.684351039411352,
+                        90.31564896058865,
+                        100.0
+                    ]
+                ],
+                "true_positive": 94,
+                "true_negative": 55480,
+                "false_positive": 0,
+                "false_negative": 5855,
+                "true_percentage": 90.46867114880594,
+                "false_percentage": 9.531328851194061
+            },
+            "classes": {
+                "class_names": [
+                    "0",
+                    "1"
+                ],
+                "scores": [
+                    {
+                        "precision": 0.015800974953773743,
+                        "recall": 1.0,
+                        "f1-score": 0.031110375641237795,
+                        "support": 94
+                    },
+                    {
+                        "precision": 1.0,
+                        "recall": 0.9045406374826771,
+                        "f1-score": 0.9498780122415785,
+                        "support": 61335
+                    }
+                ]
+            }
+        }
+    },
+    "training_dataset": "27e954e7-388d-4478-9927-81541f165dc3",
+    "model_type": "classification",
+    "data_format": "csv",
+    "status": "trained",
+    "version_id": "840e8640-a108-47c2-ba89-c0869ed284f6",
+    "data_schema": {},
+    "is_deleted": false,
+    "is_enabled": true,
+    "is_default": true,
+    "is_published": true,
+    "parent_version": "840e8640-a108-47c2-ba89-c0869ed284f6",
+    "name": "base_version",
+    "model_id": "6ac5fabb-b56f-405c-947d-39fc4d4e74b0",
+    "created_by": "system",
+    "modified_by": "6bf53207-6ff7-4f94-9a76-ca15afbf552f",
+    "description": "",
+    "cts": "2021-07-02T11:30:51.188123",
+    "uts": "2021-07-05T08:48:18.312768",
+    "_XpmsObjectMixin__type": "MLModelVersion",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "retraining_threshold": 500
+}

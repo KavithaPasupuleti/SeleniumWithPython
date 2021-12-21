@@ -1,0 +1,126 @@
+{
+    "model_id": "d3e80cdf-de18-4062-a5d3-6d2b44f6e12e",
+    "data_format": "csv",
+    "retraining_threshold": 1,
+    "exec_grp_id": "0c29aec5-3744-45c0-93d5-eccf0f91b227",
+    "dependency_package": "default_dependency_package_group",
+    "default_version": {
+        "pipeline": {
+            "pipeline_id": "b19f58cd-6d03-4bf3-ba51-d96cf8be2901",
+            "source": {
+                "model_type": "classification",
+                "pipeline_template_name": "empty"
+            },
+            "source_type": "template",
+            "pipeline_name": "default paragraph classifier_base_version",
+            "version_id": "b00e596c-bfe9-4fca-85fd-d808425fc200"
+        },
+        "evaluation": {
+            "05a628df-53e6-41a4-bc57-736acdf21082": {
+                "scores": {
+                    "accuracy": 0.9902380952380953,
+                    "precision": 0.9902245957906494,
+                    "recall": 0.9902380952380953,
+                    "f1": 0.9902277609615379
+                },
+                "model_class": "classification",
+                "confusion_metrics": [
+                    [
+                        3099,
+                        17
+                    ],
+                    [
+                        24,
+                        1060
+                    ]
+                ],
+                "stats": {
+                    "reconstructed_matrix": [
+                        [
+                            73.78571428571429,
+                            0.40476190476190477,
+                            74.19047619047619
+                        ],
+                        [
+                            0.5714285714285714,
+                            25.238095238095237,
+                            25.80952380952381
+                        ],
+                        [
+                            74.35714285714286,
+                            25.642857142857142,
+                            100.0
+                        ]
+                    ],
+                    "true_positive": 3099,
+                    "true_negative": 1060,
+                    "false_positive": 17,
+                    "false_negative": 24,
+                    "true_percentage": 99.02380952380952,
+                    "false_percentage": 0.9761904761904762
+                },
+                "classes": {
+                    "class_names": [
+                        "0",
+                        "1"
+                    ],
+                    "scores": [
+                        {
+                            "precision": 0.9923150816522575,
+                            "recall": 0.9945442875481386,
+                            "f1-score": 0.9934284340439173,
+                            "support": 3116
+                        },
+                        {
+                            "precision": 0.9842154131847726,
+                            "recall": 0.977859778597786,
+                            "f1-score": 0.9810273021749191,
+                            "support": 1084
+                        }
+                    ]
+                }
+            }
+        },
+        "training_dataset": "05a628df-53e6-41a4-bc57-736acdf21082",
+        "model_type": "classification",
+        "data_format": "csv",
+        "status": "trained",
+        "version_id": "b00e596c-bfe9-4fca-85fd-d808425fc200",
+        "data_schema": {},
+        "is_deleted": false,
+        "is_enabled": true,
+        "is_default": true,
+        "is_published": true,
+        "parent_version": "b00e596c-bfe9-4fca-85fd-d808425fc200",
+        "model_id": "d3e80cdf-de18-4062-a5d3-6d2b44f6e12e",
+        "solution_id": "impoerasset",
+        "_XpmsObjectMixin__api_version": "9.0",
+        "_XpmsObjectMixin__type": "MLModelVersion",
+        "created_by": "system",
+        "cts": "2020-06-05T12:59:42.095087",
+        "description": "",
+        "modified_by": "system",
+        "name": "base_version",
+        "retraining_threshold": 1,
+        "uts": "2020-09-06T07:32:27.667544"
+    },
+    "evaluation_datasets": [
+        "05a628df-53e6-41a4-bc57-736acdf21082"
+    ],
+    "is_enabled": true,
+    "category": "classification",
+    "name": "default paragraph classifier",
+    "description": "",
+    "cts": "2020-06-05T12:59:42.100770",
+    "is_deleted": false,
+    "uts": "2020-09-06T07:32:29.187379",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "MLModel",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "is_default": true,
+    "metadata": [],
+    "model_type": "classification",
+    "template": "",
+    "template_id": "b63dbed1-bedc-4dec-a4cd-1a7e56fafa13"
+}

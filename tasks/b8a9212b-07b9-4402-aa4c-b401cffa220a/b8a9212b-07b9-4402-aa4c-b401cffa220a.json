@@ -1,0 +1,20 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions",
+    "name": "upload_benchmark_docs",
+    "description": "This function is used to upload the documents to minio from a zip",
+    "cts": "2020-09-15T18:41:25.239623",
+    "is_deleted": false,
+    "uts": "2020-09-15T18:41:25.239631",
+    "default_version": "67542c8a-71a3-44ae-a340-ab7a6df18346",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "task_id": "b8a9212b-07b9-4402-aa4c-b401cffa220a"
+}

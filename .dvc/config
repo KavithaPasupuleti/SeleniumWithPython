@@ -1,0 +1,5 @@
+[core]
+    remote = dvc-storage
+['remote "dvc-storage"']
+    url = s3://xpms-ca-test/dvc-storage/30sep22
+    endpointurl = http://minios3.public.svc.cluster.local:9000

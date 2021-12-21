@@ -1,0 +1,127 @@
+{
+    "create_ts": "2021-09-30 08:55:08.378444",
+    "task_id": "QPShJa6JR9OKAn6ekFTGvQ",
+    "version_id": "v1",
+    "task_name": "Split Dataset",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "Split Dataset",
+    "description": "Splits a dataset into two datasets based on the split_ratio",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "source_type": "lib",
+        "source": "ml_lib.resources.task_scripts.dataset_custom_split_dataset",
+        "files": []
+    },
+    "exec_type": null,
+    "category": "ml.Data Transformation",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "format_convertors.split_dataset",
+        "x_config": [
+            {
+                "min_value": null,
+                "max_value": null,
+                "closure": "closed_closed",
+                "name": "split ratio",
+                "description": "split ratio of the first bucket of the two result buckets",
+                "data_type": "float",
+                "op_type": "continuous",
+                "value": 0.3,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.func.configuration.split_ratio",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    true,
+                    false
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "shuffle",
+                "description": "shuffling of dataset",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": false,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.func.configuration.shuffle",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": null,
+                "max_value": null,
+                "closure": "closed_closed",
+                "name": "random state",
+                "description": "setting the seed for random",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 30,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.func.configuration.random_state",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "stratify_column",
+                "description": "stratifing split based on a column",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.func.configuration.stratify_column",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "16wP9cXDSgm8QvhF8oTUFg",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

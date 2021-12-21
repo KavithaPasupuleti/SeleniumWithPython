@@ -1,0 +1,26 @@
+{
+    "task_class": "xpms_lib_dag.tasks.function_task.FunctionTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "is_enabled": true,
+    "category": "functions.Function",
+    "name": "hma_metadata_chunk",
+    "description": "imported git function",
+    "cts": "2021-09-14T09:07:45.608119",
+    "is_deleted": false,
+    "uts": "2021-09-14T09:07:45.608128",
+    "default_version": "41d253ec-8e9a-4ee0-a6e3-8e10f54dcbc7",
+    "created_by": "system",
+    "modified_by": "system",
+    "asset_source": {
+        "type": "",
+        "name": "",
+        "version": ""
+    },
+    "pulse_enabled": false,
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "10.0",
+    "task_id": "cf87f813-38c0-4f19-8f69-39c818324478"
+}

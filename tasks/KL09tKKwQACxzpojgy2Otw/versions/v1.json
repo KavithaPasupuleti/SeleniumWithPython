@@ -1,0 +1,228 @@
+{
+    "create_ts": "2021-09-30 08:55:08.363358",
+    "task_id": "KL09tKKwQACxzpojgy2Otw",
+    "version_id": "v1",
+    "task_name": "SKL KNN Classifier",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "SKL KNN Classifier",
+    "description": "Scikit-Learn Wrapper interface for KNN Classifier.",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "algorithm": {
+            "auto_tuner": {
+                "name": "grid_search"
+            },
+            "class": "sklearn.neighbors.KNeighborsClassifier"
+        },
+        "source_type": "lib",
+        "source": "ml_lib.resources.task_scripts.classification_algo_skl_model_runner",
+        "files": [],
+        "model_class": "classification"
+    },
+    "exec_type": null,
+    "category": "ml.Ml Task",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "sklearn.classification.KNeighborsClassifier",
+        "x_config": [
+            {
+                "options": [
+                    "accuracy"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "scorers",
+                "description": "evaluation_metrics",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.scorers",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "api": "ml/task/list_instances",
+                "trigger": "list_ml_task_instances",
+                "options": "result.metadata.tasks",
+                "request_data": {
+                    "model": {
+                        "model_id": "",
+                        "version_id": ""
+                    },
+                    "task": {
+                        "task_id": ""
+                    }
+                },
+                "display_key": "name",
+                "value_key": "instance_id",
+                "custom_request_data": [
+                    "model.model_id",
+                    "model.version_id",
+                    "task.task_id"
+                ],
+                "name": "task reference",
+                "description": "link a pre_existing task in the model",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "none",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_reference",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "PlatformApiListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "is_option_object": true
+            },
+            {
+                "name": "target",
+                "description": "target column",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "target",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.target",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 1,
+                "max_value": 50,
+                "closure": "closed_closed",
+                "name": "n_neighbors",
+                "description": "Number of neighbors to use",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 5,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.n_neighbors",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "uniform",
+                    "distance"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "weights",
+                "description": "weight function used in prediction",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "uniform",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.weights",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "ball_tree",
+                    "kd_tree",
+                    "brute",
+                    "auto"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "algorithm",
+                "description": "Algorithm used to compute the nearest neighbors",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "ball_tree",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.algorithm",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "min_value": 1,
+                "max_value": 100,
+                "closure": "closed_closed",
+                "name": "leaf_size",
+                "description": "Leaf size passed to BallTree or KDTree. This can affect the speed of the construction and query, as well as the memory required to store the tree.",
+                "data_type": "integer",
+                "op_type": "continuous",
+                "value": 30,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.algorithm.configuration.leaf_size",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "NumericConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    true,
+                    false
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "multi_model",
+                "description": "to create model for each class",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": false,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.multi_model",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "1oBdfZChSauaJ6l3Iujrhw",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

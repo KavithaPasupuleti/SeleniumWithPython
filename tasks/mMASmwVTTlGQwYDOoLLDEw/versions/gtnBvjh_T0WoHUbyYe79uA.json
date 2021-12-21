@@ -1,0 +1,97 @@
+{
+    "create_ts": "2021-09-30 08:54:41.991512",
+    "task_id": "mMASmwVTTlGQwYDOoLLDEw",
+    "version_id": "gtnBvjh_T0WoHUbyYe79uA",
+    "task_name": "Ingest AB test data to pulse",
+    "task_class": "xpms_lib_dag.tasks.ingest_ab_data_pulse_task.IngestPulseData",
+    "name": "Ingest AB test data to pulse",
+    "description": "",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {},
+    "exec_type": null,
+    "category": "services.Pulse",
+    "is_enabled": true,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "index": "services.ingest_ab_data_pulse_task",
+        "x_config": [
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "task_name",
+                "description": "set the task name",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_name",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "task_id",
+                "description": "set the task id",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_id",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "status",
+                "description": "set the status",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.status",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "IOasWZhvTyuB3cF2C7g2LA",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

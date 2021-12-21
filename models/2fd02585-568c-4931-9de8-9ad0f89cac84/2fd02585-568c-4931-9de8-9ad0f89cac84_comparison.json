@@ -1,0 +1,92 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-06-23T12:51:51.882126",
+    "uts": "2020-09-06T07:32:24.710636",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "model_id": "2fd02585-568c-4931-9de8-9ad0f89cac84",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {
+            "recall": 0.9909323446571248,
+            "precision": 0.9913132498612512,
+            "f1": 0.99106342002956,
+            "accuracy": 0.9909323446571248
+        },
+        "classes": {
+            "0": {
+                "precision": 0.9972622965947892,
+                "recall": 0.9930620434043466,
+                "f1-score": 0.9951577380267207,
+                "support": 65293
+            },
+            "1": {
+                "precision": 0.9008752735229759,
+                "recall": 0.9585564610011641,
+                "f1-score": 0.9288212069937958,
+                "support": 4295
+            }
+        }
+    },
+    "is_deleted": false,
+    "model_comparisons": {
+        "f909c209-c218-4929-8b38-5453f5a9fb35": {
+            "20a8c16d-3f9b-4995-9a1e-bcd65e059418": {
+                "classes": {
+                    "0": {
+                        "precision": 0.9876847290640394,
+                        "recall": 0.9438710845554952,
+                        "f1-score": 0.9652809925006943,
+                        "support": 5523
+                    },
+                    "1": {
+                        "precision": 0.49263502454991814,
+                        "recall": 0.8224043715846995,
+                        "f1-score": 0.6161719549641761,
+                        "support": 366
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.9363219561895059,
+                    "precision": 0.956917503414155,
+                    "recall": 0.9363219561895059,
+                    "f1": 0.9435839458478898
+                },
+                "is_recommended": false,
+                "is_cutoff_passed": false
+            }
+        },
+        "786311e5-c8c9-4edb-8959-a0667a1bb716": {
+            "20a8c16d-3f9b-4995-9a1e-bcd65e059418": {
+                "classes": {
+                    "0": {
+                        "precision": 0.9972622965947892,
+                        "recall": 0.9930620434043466,
+                        "f1-score": 0.9951577380267207,
+                        "support": 65293
+                    },
+                    "1": {
+                        "precision": 0.9008752735229759,
+                        "recall": 0.9585564610011641,
+                        "f1-score": 0.9288212069937958,
+                        "support": 4295
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.9909323446571248,
+                    "precision": 0.9913132498612512,
+                    "recall": 0.9909323446571248,
+                    "f1": 0.99106342002956
+                },
+                "is_recommended": true,
+                "is_cutoff_passed": true
+            }
+        }
+    },
+    "model_config_id": "64e04629-b73d-4a7a-b8ff-51f1205ff501",
+    "model_type": "classification",
+    "scoring_metric": "accuracy"
+}

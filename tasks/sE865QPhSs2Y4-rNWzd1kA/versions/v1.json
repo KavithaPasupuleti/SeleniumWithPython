@@ -1,0 +1,40 @@
+{
+    "create_ts": "2021-09-14 06:06:59.739991",
+    "task_id": "sE865QPhSs2Y4-rNWzd1kA",
+    "version_id": "v1",
+    "task_name": "Index Content",
+    "task_class": "xpms_lib_dag.tasks.mq_task.MqTask",
+    "name": "Index Content",
+    "description": "Index Content",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "conditions": null,
+        "service_name": "index_content",
+        "trigger": "index_content"
+    },
+    "exec_type": "async",
+    "category": "platform_api",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "extras": {
+        "x_config": []
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 0,
+    "retries": 0,
+    "state": {},
+    "instance_id": "pON1g9k_RDKfziJ85WvyyQ",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

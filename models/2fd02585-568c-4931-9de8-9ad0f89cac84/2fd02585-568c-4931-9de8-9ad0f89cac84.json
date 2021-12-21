@@ -1,0 +1,190 @@
+{
+    "model_id": "2fd02585-568c-4931-9de8-9ad0f89cac84",
+    "data_format": "csv",
+    "exec_grp_id": "0c29aec5-3744-45c0-93d5-eccf0f91b227",
+    "dependency_package": "default_dependency_package_group",
+    "retraining_threshold": 1,
+    "default_version": {
+        "pipeline": {
+            "pipeline_id": "06d1bcd0-9208-49e1-95fa-e8d63e8b12b4",
+            "source": {
+                "model_type": "classification",
+                "pipeline_template_name": "empty"
+            },
+            "source_type": "template",
+            "pipeline_name": "default header classifier_base_version",
+            "version_id": "20a8c16d-3f9b-4995-9a1e-bcd65e059418"
+        },
+        "evaluation": {
+            "f909c209-c218-4929-8b38-5453f5a9fb35": {
+                "scores": {
+                    "accuracy": 0.9363219561895059,
+                    "precision": 0.956917503414155,
+                    "recall": 0.9363219561895059,
+                    "f1": 0.9435839458478898
+                },
+                "model_class": "classification",
+                "confusion_metrics": [
+                    [
+                        5213,
+                        310
+                    ],
+                    [
+                        65,
+                        301
+                    ]
+                ],
+                "stats": {
+                    "reconstructed_matrix": [
+                        [
+                            88.52097130242825,
+                            5.264051621667516,
+                            93.78502292409577
+                        ],
+                        [
+                            1.1037527593818985,
+                            5.11122431652233,
+                            6.214977075904229
+                        ],
+                        [
+                            89.62472406181016,
+                            10.375275938189846,
+                            100.0
+                        ]
+                    ],
+                    "true_positive": 5213,
+                    "true_negative": 301,
+                    "false_positive": 310,
+                    "false_negative": 65,
+                    "true_percentage": 93.63219561895059,
+                    "false_percentage": 6.367804381049414
+                },
+                "classes": {
+                    "class_names": [
+                        "0",
+                        "1"
+                    ],
+                    "scores": [
+                        {
+                            "precision": 0.9876847290640394,
+                            "recall": 0.9438710845554952,
+                            "f1-score": 0.9652809925006943,
+                            "support": 5523
+                        },
+                        {
+                            "precision": 0.49263502454991814,
+                            "recall": 0.8224043715846995,
+                            "f1-score": 0.6161719549641761,
+                            "support": 366
+                        }
+                    ]
+                }
+            },
+            "786311e5-c8c9-4edb-8959-a0667a1bb716": {
+                "scores": {
+                    "accuracy": 0.9909323446571248,
+                    "precision": 0.9913132498612512,
+                    "recall": 0.9909323446571248,
+                    "f1": 0.99106342002956
+                },
+                "model_class": "classification",
+                "confusion_metrics": [
+                    [
+                        64840,
+                        453
+                    ],
+                    [
+                        178,
+                        4117
+                    ]
+                ],
+                "stats": {
+                    "reconstructed_matrix": [
+                        [
+                            93.17698453756395,
+                            0.6509743059148129,
+                            93.82795884347877
+                        ],
+                        [
+                            0.25579122837270796,
+                            5.916249928148531,
+                            6.172041156521239
+                        ],
+                        [
+                            93.43277576593667,
+                            6.567224234063344,
+                            100.00000000000001
+                        ]
+                    ],
+                    "true_positive": 64840,
+                    "true_negative": 4117,
+                    "false_positive": 453,
+                    "false_negative": 178,
+                    "true_percentage": 99.09323446571248,
+                    "false_percentage": 0.9067655342875208
+                },
+                "classes": {
+                    "class_names": [
+                        "0",
+                        "1"
+                    ],
+                    "scores": [
+                        {
+                            "precision": 0.9972622965947892,
+                            "recall": 0.9930620434043466,
+                            "f1-score": 0.9951577380267207,
+                            "support": 65293
+                        },
+                        {
+                            "precision": 0.9008752735229759,
+                            "recall": 0.9585564610011641,
+                            "f1-score": 0.9288212069937958,
+                            "support": 4295
+                        }
+                    ]
+                }
+            }
+        },
+        "training_dataset": "786311e5-c8c9-4edb-8959-a0667a1bb716",
+        "model_type": "classification",
+        "data_format": "csv",
+        "status": "trained",
+        "version_id": "20a8c16d-3f9b-4995-9a1e-bcd65e059418",
+        "data_schema": {},
+        "is_deleted": false,
+        "is_enabled": true,
+        "is_default": true,
+        "is_published": true,
+        "parent_version": "20a8c16d-3f9b-4995-9a1e-bcd65e059418",
+        "model_id": "2fd02585-568c-4931-9de8-9ad0f89cac84",
+        "solution_id": "impoerasset",
+        "_XpmsObjectMixin__api_version": "9.0",
+        "_XpmsObjectMixin__type": "MLModelVersion",
+        "created_by": "system",
+        "cts": "2020-06-23T12:51:51.839378",
+        "description": "",
+        "modified_by": "system",
+        "name": "base_version",
+        "retraining_threshold": 1,
+        "uts": "2020-09-06T07:32:40.786554"
+    },
+    "evaluation_datasets": [
+        "786311e5-c8c9-4edb-8959-a0667a1bb716"
+    ],
+    "is_enabled": true,
+    "category": "classification",
+    "name": "default header classifier",
+    "description": "",
+    "cts": "2020-06-23T12:51:51.845489",
+    "is_deleted": false,
+    "uts": "2020-09-06T07:32:42.336080",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "MLModel",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "is_default": true,
+    "metadata": [],
+    "model_type": "classification",
+    "template": "",
+    "template_id": "0bcc89e5-32ac-420a-ace5-17655aa90b67"
+}

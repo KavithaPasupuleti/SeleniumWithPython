@@ -1,0 +1,66 @@
+{
+    "name": "",
+    "description": "",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "2020-06-05T12:55:32.640988",
+    "uts": "2020-09-06T07:32:23.300349",
+    "_XpmsObjectMixin__type": "ModelComparison",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "model_id": "3e5149fe-2e58-47ea-8d36-bc46510859a4",
+    "baseline_version": "",
+    "cutoff": {
+        "scores": {
+            "recall": 0.8888888888888888,
+            "precision": 0.9090909090909091,
+            "f1": 0.8875000000000001,
+            "accuracy": 0.8888888888888888
+        },
+        "classes": {
+            "default": {
+                "precision": 0.8181818181818182,
+                "recall": 1.0,
+                "f1-score": 0.9,
+                "support": 9
+            },
+            "unknown": {
+                "precision": 1.0,
+                "recall": 0.7777777777777778,
+                "f1-score": 0.8750000000000001,
+                "support": 9
+            }
+        }
+    },
+    "is_deleted": false,
+    "model_comparisons": {
+        "9e0bf78d-aa38-433a-91ac-8fc1a1c0f75c": {
+            "894bb371-7342-45d4-8df4-d762d297e577": {
+                "classes": {
+                    "default": {
+                        "precision": 0.8181818181818182,
+                        "recall": 1.0,
+                        "f1-score": 0.9,
+                        "support": 9
+                    },
+                    "unknown": {
+                        "precision": 1.0,
+                        "recall": 0.7777777777777778,
+                        "f1-score": 0.8750000000000001,
+                        "support": 9
+                    }
+                },
+                "scores": {
+                    "accuracy": 0.8888888888888888,
+                    "precision": 0.9090909090909091,
+                    "recall": 0.8888888888888888,
+                    "f1": 0.8875000000000001
+                },
+                "is_recommended": true,
+                "is_cutoff_passed": true
+            }
+        }
+    },
+    "model_config_id": "5d3d0edd-b3f3-4514-b94f-33428188bcd9",
+    "model_type": "classification",
+    "scoring_metric": "accuracy"
+}

@@ -1,0 +1,4 @@
+outs:
+- md5: 2bdd49cf0174e66f75ffe60ef87b05a5
+  size: 217771112
+  path: tf_model_903_1600.pb

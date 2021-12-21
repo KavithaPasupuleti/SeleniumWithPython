@@ -1,0 +1,20 @@
+{
+    "task_class": "xpms_lib_dag.tasks.dag_task.DagTask",
+    "exec_type": "sync",
+    "compatible_groups": [
+        "base_dependency_group"
+    ],
+    "is_enabled": true,
+    "category": "pipeline",
+    "name": "default omr classifier_base_version",
+    "description": "",
+    "cts": "2019-07-18T09:54:16.585886",
+    "is_deleted": false,
+    "uts": "2019-07-18T09:54:16.585890",
+    "default_version": "b82c5c64-146b-4ef4-a817-8da7dda4583b",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "TaskVersionBundle",
+    "_XpmsObjectMixin__api_version": "9.5",
+    "task_id": "2f05b887-341f-4086-997c-5b608fe832d6"
+}

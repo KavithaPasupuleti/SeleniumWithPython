@@ -1,0 +1,18 @@
+{
+    "pipeline_id": "2f05b887-341f-4086-997c-5b608fe832d6",
+    "input_schema": {},
+    "output_schema": {},
+    "is_enabled": true,
+    "category": "model_pipeline",
+    "name": "default omr classifier_base_version",
+    "description": "",
+    "cts": "2019-07-18T09:53:34.019461",
+    "is_deleted": false,
+    "uts": "2020-10-12T10:20:50.432019",
+    "default_version": "b82c5c64-146b-4ef4-a817-8da7dda4583b",
+    "created_by": "system",
+    "modified_by": "system",
+    "_XpmsObjectMixin__type": "Pipeline",
+    "_XpmsObjectMixin__api_version": "9.5",
+    "generate_api": false
+}

@@ -1,0 +1,154 @@
+{
+    "create_ts": "2021-09-30 08:55:08.365578",
+    "task_id": "1OThkZtrTKy1VJ__YrAa5g",
+    "version_id": "v1",
+    "task_name": "SKL Gaussian NB Classifier",
+    "task_class": "ml_lib.model.dag_tasks.ml_task.MLTask",
+    "name": "SKL Gaussian NB Classifier",
+    "description": "Sklearn Naive Bayes Gaussian Classifier",
+    "start": null,
+    "end": null,
+    "tasks": {},
+    "config": {
+        "source_type": "lib",
+        "algorithm": {
+            "auto_tuner": {
+                "name": "grid_search"
+            },
+            "class": "sklearn.naive_bayes.GaussianNB"
+        },
+        "source": "ml_lib.resources.task_scripts.classification_algo_skl_model_runner",
+        "files": [],
+        "model_class": "classification"
+    },
+    "exec_type": null,
+    "category": "ml.Ml Task",
+    "is_enabled": false,
+    "is_published": true,
+    "is_deleted": false,
+    "compatible_groups": [
+        "default_dependency_package_group"
+    ],
+    "extras": {
+        "ui_index": "sklearn.classification.GaussianNB",
+        "x_config": [
+            {
+                "options": [
+                    "accuracy"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "scorers",
+                "description": "evaluation_metrics",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": null,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.scorers",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "name": "target",
+                "description": "target column",
+                "data_type": "string",
+                "op_type": "continuous",
+                "value": "target",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.target",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "StringConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "api": "ml/task/list_instances",
+                "trigger": "list_ml_task_instances",
+                "options": "result.metadata.tasks",
+                "request_data": {
+                    "model": {
+                        "model_id": "",
+                        "version_id": ""
+                    },
+                    "task": {
+                        "task_id": ""
+                    }
+                },
+                "display_key": "name",
+                "value_key": "instance_id",
+                "custom_request_data": [
+                    "model.model_id",
+                    "model.version_id",
+                    "task.task_id"
+                ],
+                "name": "task reference",
+                "description": "link a pre_existing task in the model",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "none",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.task_reference",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "PlatformApiListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0",
+                "is_option_object": true
+            },
+            {
+                "options": [
+                    true,
+                    false
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "multi_model",
+                "description": "to create model for each class",
+                "data_type": "boolean",
+                "op_type": "categorical",
+                "value": false,
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.multi_model",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            },
+            {
+                "options": [
+                    "any",
+                    "all"
+                ],
+                "is_option_object": false,
+                "display_key": null,
+                "value_key": null,
+                "name": "dependencies",
+                "description": "dependency on previous tasks to run",
+                "data_type": "string",
+                "op_type": "categorical",
+                "value": "any",
+                "multi_select": false,
+                "hidden": false,
+                "config_path": "config.dependencies",
+                "ui_component": "",
+                "_XpmsObjectMixin__type": "CategoricalListConfiguration",
+                "_XpmsObjectMixin__api_version": "10.0"
+            }
+        ]
+    },
+    "next": [],
+    "previous": [],
+    "timeout": 3000,
+    "retries": 0,
+    "state": {},
+    "instance_id": "-cCtWX99RO21Jxru99dt-A",
+    "created_by": "system",
+    "modified_by": "system",
+    "cts": "",
+    "uts": "",
+    "_XpmsObjectMixin__type": "Task",
+    "_XpmsObjectMixin__api_version": "10.0"
+}

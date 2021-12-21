@@ -1,0 +1,22 @@
+{
+    "data_points": null,
+    "labels": null,
+    "stats": {},
+    "name": "default paragraph classifier",
+    "is_deleted": false,
+    "status": "ready",
+    "created_by": "user",
+    "modified_by": "user",
+    "file_path": "datasets/05a628df-53e6-41a4-bc57-736acdf21082/file",
+    "source": "payload",
+    "data_format": "csv",
+    "description": "training dataset for platform paragraph classifier",
+    "cts": "2020-04-03T16:34:21.982975",
+    "uts": "2020-10-12T10:03:24.082452",
+    "_XpmsObjectMixin__type": "Dataset",
+    "_XpmsObjectMixin__api_version": "9.0",
+    "dataset_id": "05a628df-53e6-41a4-bc57-736acdf21082",
+    "data_schema": null,
+    "tags": [],
+    "value": "datasets/05a628df-53e6-41a4-bc57-736acdf21082/file"
+}
